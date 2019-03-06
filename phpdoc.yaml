@@ -1,0 +1,73 @@
+title: geomce - carte GéoMCE
+path: /gexplor/geomce
+doc: |
+  Réalisation d'une carte Leaflet des mesures GéoMCE.
+  Dans la carte, la localisation des mesures sur La Réunion a été corrigée des erreurs de projection.
+  Les mesure_emprise sont généralisées pour les zoom < 14 sous la forme d'un point ou d'un rectangle.
+  Les grandes mesures sont désagrégés en fonction du zoom.
+  
+  en dev:
+    synchro:
+      http://localhost/synchro.php?remote=http://bdavid.alwaysdata.net/&dir=gexplor/geomce
+    accueil:
+      http://bdavid.alwaysdata.net/gexplor/geomce/
+      
+  en prod:
+    synchro:
+      http://localhost/synchro.php?remote=http://prod.geoapi.fr&dir=gexplor/geomce
+    accueil:
+      http://gexplor.fr/geomce/
+      
+  Enseignements:
+    - l'architecture flux GeoJSON / carte Leaflet s'avère très pertinente
+      - une carte lit un flux GéoJSON avec le plug-in uGeoJSON et en effectue une rerésentation cartographique
+      - ce flux est généré par un script à partir de la source des données en fonction du zoom et de la BBox
+      - mise en oeuvre d'un algo de généralisation des géométries
+    - développement d'un nouveau package GéoJSON plus efficace que geometry
+      - code plus générique provenant du codage plus simple des coordonnées (comme en GéoJSON)
+      - avec PgSql, il n'est plus utile de gérer le WKT
+        - cependant, avec la version MySQL sur Alwaysdata cela reste nécessaire
+      - simplification de l'interface de CoordSys notamment pour UTM
+    - nouveauté d'utiliser un style dans GéoJSON inspiré de https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
+      - le style est généré en même temps que le GéoJSON et est consommé par la carte Leaflet
+      - c'est une approche différente de celle du calcul du style à la volée dans Leaflet par une fonction JS
+        utilisée par exemple pour visualiser la BDTopo
+    - logique d'utilisation de marker.php/{symbol}/{colors}?/{width}?/{height}?.{fmt}?
+      préférable à l'utilisation d'une bibliothèque de marker stockée dans la carte insuffisamment extensible
+    - utilité de standardiser les cartes Leaflet selon le principe de la classe YamlDoc Map
+      - intérêt d'y ajouter de nlles fonctionnalités
+    - PgSQL est complexe à utiliser sur les FeatureCollection, notamment le prédicat d'intersection dans la requête
+      ne fonctionne pas
+      - j'ai contourné cette difficulté en effectuant la sélection BBox dans le code
+      - cela a été possible car la base est très petite
+    - utilisation des tests unitaires
+
+  Architecture:
+    - geojson.php lit la base PgSQL et génère un flux GéoJSON généralisé et stylé en fonction du zoom et du BBox
+    - html.php lit la base PgSQL et génère une page HTML des mesures
+    - geojson.inc.php implémente des fonctions communes pour les 2 scripts précédents
+    - coordsys.inc.php implémente les changements de CRS
+    - localtest.inc.php simule les fonctions PgSQL pour permettre des tests locaux
+    - map.php est la carte Leaflet d'affichage du flux GéoJSON, legend.php est sa légende
+    - marker.php génère un symbole ponctuel en fonction du nom du symbole, de la couleur, ...
+    - index.php 
+    
+journal: |
+  5/3/2019
+    distinction entre symboles différents, paramétrages des symboles, utilisation de style pour les points
+    ajout de la légende de la carte
+    ajout de la surface et de la longueur des mesures
+  4/3/2019
+    création du projet
+htmlFiles:
+phpScripts:
+  - /gexplor/geomce/index.php
+  - /gexplor/geomce/geojson.php
+  - /gexplor/geomce/html.php
+  - /gexplor/geomce/map.php
+  - /gexplor/geomce/legend.php
+  - /gexplor/geomce/marker.php
+phpIncludes:
+  - /gexplor/geomce/geojson.inc.php
+  - /gexplor/geomce/coordsys.inc.php
+  - /gexplor/geomce/localtest.inc.php
