@@ -6,6 +6,8 @@ doc: |
   Les mesure_emprise sont généralisées pour les zoom < 14 sous la forme d'un point ou d'un rectangle.
   Les grandes mesures sont désagrégés en fonction du zoom.
   
+  Projet publié sur https://github.com/benoitdavidfr/geomce
+  
   en dev:
     synchro:
       http://localhost/synchro.php?remote=http://bdavid.alwaysdata.net/&dir=gexplor/geomce
