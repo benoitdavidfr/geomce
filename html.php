@@ -127,7 +127,7 @@ if (!$tid) {
         $sum[$name] += $col_value;
       }
       else
-        echo "<td>$name: $col_value</td>\n";
+        echo "<td>$col_value</td>\n";
     }
     echo "<tr>\n";
   }

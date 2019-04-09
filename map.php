@@ -47,6 +47,13 @@ var bases = {
     'http://igngp.geoapi.fr/tile.php/orthos/{z}/{x}/{y}.jpg',
     {"format":"image/jpeg","minZoom":0,"maxZoom":18,"attribution":"&copy; <a href='http://www.ign.fr'>IGN</a>"}
   ),
+// PYR Shom
+  "GéoTiff Shom" : new L.TileLayer(
+    'https://geoapi.fr/shomgt/tile.php/gtpyr/{z}/{x}/{y}.png',
+    { "format":"png","minZoom":0,"maxZoom":18,"detectRetina":false,
+      "attribution":"&copy; <a href='http://data.shom.fr' target='_blank'>Shom</a>"
+    }
+  ),
   "Fond blanc" : new L.TileLayer(
     'http://visu.gexplor.fr/utilityserver.php/whiteimg/{z}/{x}/{y}.png',
     {"format":"image/png","minZoom":0,"maxZoom":21}
@@ -54,7 +61,22 @@ var bases = {
 };
 map.addLayer(bases["Cartes IGN"]);
 
+var wmtsurl = 'http://wxs.ign.fr/k9nf5972y39b2ks5nmmk9qng/geoportail/wmts?'
+            + 'service=WMTS&version=1.0.0&request=GetTile&tilematrixSet=PM&height=256&width=256&'
+            + 'tilematrix={z}&tilecol={x}&tilerow={y}';
 var overlays = {
+  "protoIgn": new L.TileLayer.WMS('http://gpp3-wxs.ign.fr/k9nf5972y39b2ks5nmmk9qng/geoportail/v/wms',{
+    layers: 'MESURES_COMPENSATOIRES_ENVIRONNEMENTALES',
+    format: 'image/png',
+    transparent: true,
+    attribution: "&copy; <a href='http://www.ecologique-solidaire.gouv.fr'>IGN</a>"
+  }),
+  /*"protoIgnWmts": new L.TileLayer(
+    wmtsurl + '&layer=ORTHOIMAGERY.ORTHOPHOTOS&format=image/jpeg&style=normal',
+    { format: 'image/png', minZoom: 0, maxZoom: 20, detectRetina: true,
+      attribution: "&copy; <a href='http://www.ecologique-solidaire.gouv.fr'>IGN</a>"
+    }
+  ),*/
   "mesure_emprise" : new L.UGeoJSONLayer({
     lyrid: 'maps/geomce/mesure_emprise',
     endpoint: <?php echo $geomceUrl;?>+'/geojson.php/mesure_emprise',
@@ -102,7 +124,8 @@ var overlays = {
 <?php
 if (!$table || !$mid) echo <<<EOT
 };
-map.addLayer(overlays["mesure_emprise"]);
+//map.addLayer(overlays["mesure_emprise"]);
+map.addLayer(overlays["protoIgn"]);
 
 EOT;
 else echo <<<EOT
