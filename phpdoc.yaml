@@ -55,6 +55,16 @@ doc: |
     - index.php 
     
 journal: |
+  11/4/2019
+    chargement de la nouvelle base
+    découpage du fichier source en 2 fichiers
+      - un fichier de création de tables et exécution par phppgadmin
+      - un fichier d'insertion des données
+        - recopie du dernier fichier sur Alwaysdata
+        - se connecter sur alwaysdata
+    lancer psql -h postgresql-bdavid.alwaysdata.net bdavid_geomce < geomce_extr_ign2.sql 
+    data dans mesures_communes + mesures_emprises
+    
   5/3/2019
     distinction entre symboles différents, paramétrages des symboles, utilisation de style pour les points
     ajout de la légende de la carte
