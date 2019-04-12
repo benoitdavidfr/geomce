@@ -64,7 +64,14 @@ journal: |
         - se connecter sur alwaysdata
     lancer psql -h postgresql-bdavid.alwaysdata.net bdavid_geomce < geomce_extr_ign2.sql 
     data dans mesures_communes + mesures_emprises
-    
+    donner les droits sur chacune des tables
+    les géométries sont en projection légale
+    mesures_emprises:
+      Nombre de mesures: 1590 (3005 dans la version précédente)
+      Somme des surfaces: 21985 ha
+      Somme des longueurs: 242 km
+    mesures_communes:
+      Nombre de mesures: 322
   5/3/2019
     distinction entre symboles différents, paramétrages des symboles, utilisation de style pour les points
     ajout de la légende de la carte

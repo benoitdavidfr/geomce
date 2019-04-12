@@ -9,17 +9,17 @@ journal: |
 */
 ?>
 <!DOCTYPE html><html><head><meta charset='UTF-8'><title>GéoMCE</title></head><body>
-<h2>Consultation de l'export Postgresql GéoMCE transmis le 26/2/2019</h2>
+<h2>Consultation de l'export Postgresql GéoMCE transmis le 11/4/2019</h2>
 Dans la carte, la localisation des mesures sur La Réunion a été corrigée des erreurs de projection.</p>
-<a href='html.php/mesure_emprise'>table mesure_emprise</a><br>
-<a href='html.php/mesure_commune'>table mesure_commune</a><br>
+<a href='html.php/mesures_emprises'>table mesures_emprises</a><br>
+<a href='html.php/mesures_communes'>table mesures_communes</a><br>
 <a href='map.php'>carte</a> et sa <a href='legend.php'>légende</a><br>
 
-<a href='geojson.php/mesure_emprise'>GéoJSON mesure_emprise</a>,
-<a href='geojson.php/mesure_emprise?zoom=0'>géométrie simplifiée</a><br>
+<a href='geojson.php/mesures_emprises'>GéoJSON mesures_emprises</a>,
+<a href='geojson.php/mesures_emprises?zoom=0'>géométrie simplifiée</a><br>
 
-<a href='geojson.php/mesure_commune'>GéoJSON mesure_commune</a>,
-<a href='geojson.php/mesure_commune?zoom=0'>géométrie simplifiée</a><br>
+<a href='geojson.php/mesures_communes'>GéoJSON mesures_communes</a>,
+<a href='geojson.php/mesures_communes?zoom=0'>géométrie simplifiée</a><br>
 
 <a href='http://georef.eu/yamldoc/?doc=geomce-remarques'>Quelques remarques</a><br>
 

@@ -8,8 +8,8 @@ doc: |
   Le chemin doit définir la table et éventuellement l'identifiant de la mesure.
   L'affichage d'une seule mesure permet d'appeler une carte de la mesure.
   Exemples d'appel:
-    http://gexplor.fr/geomce/export.php/mesure_emprise
-    http://gexplor.fr/geomce/export.php/mesure_commune/8a94834dcc5fd3cfe341e4222cb44ede
+    http://gexplor.fr/geomce/html.php/mesure_emprise
+    http://gexplor.fr/geomce/html.php/mesure_commune/xxxxx
 journal: |
   4/3/2019:
   - version finalisée
@@ -27,8 +27,8 @@ function doc(array $params=[]) {
   echo "L'affichage d'une seule mesure permet d'appeler une carte de la mesure.<br>\n";
   if ($params)
     echo "paramètres d'appel: ",json_encode($params),"<br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_emprise'>table mesure_emprise</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_commune'>table mesure_commune</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_emprises'>table mesure_emprise</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_communes'>table mesure_commune</a><br>\n";
   die();
 }
 
@@ -55,10 +55,12 @@ function doc(array $params=[]) {
 function ischema(string $table_name): array {
   $query = "select table_schema, table_name, column_name, ordinal_position, data_type, udt_name
   from INFORMATION_SCHEMA.COLUMNS where table_schema='public' and table_name = '$table_name'";
+  //echo "$query<br>\n";
   $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 
   $ischema = []; // schema de la table
   while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+    //print_r($tuple);
     $ischema['byPos'][(int)$tuple['ordinal_position']] = [
       'column_name'=> $tuple['column_name'],
       'data_type'=> $tuple['data_type'],
@@ -95,9 +97,10 @@ foreach ($ischema['byPos'] as $pos => $column) {
 
 $query = "SELECT ".implode(', ', $columns).",
 ST_AsGeoJSON($geomColumn, ".Geometry::$precision.") as geometry,
-ST_Area(ST_Transform($geomColumn, 2154))/10000 as area_ha,
-ST_Length(ST_Transform($geomColumn, 2154))/1000 as length_km
-FROM public.$table_name";
+ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
+FROM public.$table_name"
+.($tid ? " where mesure_id=$tid" : '');
+echo "<pre>query=$query</pre>\n";
 
 //echo "query=$query\n";
 $result = pg_query($query)
@@ -105,17 +108,16 @@ $result = pg_query($query)
   
 if (!$tid) {
   $columns = array_diff($columns, ['si_metier','numero_dossier','geometry']);
-  $sum = ['area_ha'=> 0, 'length_km'=> 0];
+  $sum = ['count'=> 0, 'area_ha'=> 0, 'length_km'=> 0];
   echo "<table border=1>\n";
   echo '<th>',implode('</th><th>', $columns),"</th><th>surf(ha)</th><th>long(km)</th>\n";
   while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-    $id = md5(json_encode($tuple));
     echo "<tr>\n";
     foreach ($tuple as $name => $col_value) {
       if (in_array($name, ['si_metier','numero_dossier','geometry']))
         continue;
-      if ($id) {
-        $href = "http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/$table_name/$id";
+      if ($name == 'projet') {
+        $href = "http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/$table_name/$tuple[mesure_id]";
         echo "<td><a href='$href'>$col_value</a></td>\n";
         $id = '';
       }
@@ -129,18 +131,17 @@ if (!$tid) {
       else
         echo "<td>$col_value</td>\n";
     }
+    $sum['count']++;
     echo "<tr>\n";
   }
   echo "</table>\n";
+  printf("Nombre de mesures: %d<br>\n", $sum['count']);
   printf("Somme des surfaces: %.0f ha<br>\n", $sum['area_ha']);
   printf("Somme des longueurs: %.0f km<br>\n", $sum['length_km']);
 }
 else {
   $geometry = null;
   while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-    $id = md5(json_encode($tuple));
-    if ($id <> $tid)
-      continue;
     echo "<table border=1>\n";
     foreach ($tuple as $name => $col_value) {
       if (in_array($name, ['area_ha','length_km'])) {

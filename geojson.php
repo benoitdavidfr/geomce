@@ -12,14 +12,16 @@ doc: |
     - $nbMaxOfFeatures permet de limiter le nbre de features pour des tests
     - $dissolveCollection permet de décomposer les collections en leurs éléments
   Exemples d'appel:
-    http://gexplor.fr/geomce/geojson.php/mesure_emprise?bbox=-5,45,1,49&zoom=8
-    http://gexplor.fr/geomce/geojson.php/mesure_commune/8a94834dcc5fd3cfe341e4222cb44ede
+    http://gexplor.fr/geomce/geojson.php/mesures_emprises?bbox=-5,45,1,49&zoom=8
+    http://gexplor.fr/geomce/geojson.php/mesures_communes/1397
   Je génère pour les points un style associé à chaque GeoJSON Feature
   inspiré de https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
   J'utilise la propriété 'marker-symbol' dont la valeur doit être un symbole défini dans marker.php
   Cette propriété est ensuite utilisée dans map.php pour définir le symbole à afficher.
 
 journal: |
+  11-12/4/2019:
+  - adaptation à la livraison du 11/4/2019
   5/3/2019:
   - utilisation de la propriété 'marker-symbol' pour styler les points
   - utilisation de symboles ponctuels différents en fonction de la table
@@ -38,8 +40,10 @@ function doc(array $params=[]) {
   echo "<h2>Génération GeoJSON de la base MCE</h2>\n";
   if ($params)
     echo "params=",json_encode($params),"<br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_emprise'>table mesure_emprise</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_commune'>table mesure_commune</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_emprise'>table mesure_emprise (20190226)</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_commune'>table mesure_commune (20190226)</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_emprises'>table mesures_emprises (20190411)</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_communes'>table mesures_communes (20190411)</a><br>\n";
   die();
 }
 
@@ -121,9 +125,9 @@ foreach ($ischema['byPos'] as $pos => $column) {
 
 $query = "SELECT ".implode(', ', $columns).",
 ST_AsGeoJSON($geomColumn, ".Geometry::$precision.") as geometry,
-ST_Area(ST_Transform($geomColumn, 2154))/10000 as area_ha,
-ST_Length(ST_Transform($geomColumn, 2154))/1000 as length_km
-FROM public.$table_name";
+ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
+FROM public.$table_name"
+.($tid ? " where mesure_id=$tid" : '');
 
 //echo "query=$query\n";
 $result = pg_query($query)
@@ -145,16 +149,13 @@ echo "{ \"type\": \"FeatureCollection\",\n"
 $featureno = 0;
 while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
   //echo 'tuple='; var_dump($tuple);
-  $id = md5(json_encode($tuple));
-  //if ($id <> 'a86b5e06647de3fc14d414dcf002584f') continue;
-  //if ($id <> '07121b9c7f052e47ab25ae9db6c7ae08') continue;
-  if ($tid && ($tid <> $id))
+  if (is_null($tuple['geometry']))
     continue;
   $geometry = Geometry::create(json_decode($tuple['geometry'], true));
   $geometry = correctProjectError($geometry);
   if ($reqBbox && !$reqBbox->intersects($geometry->bbox()))
     continue;
-  $feature = ['type'=> 'Feature', 'properties'=>['id'=>$id]];
+  $feature = ['type'=> 'Feature', 'properties'=>[]];
   $feature['properties']['nbreOfPos'] = $geometry->nbreOfPos();
   foreach ($tuple as $name => $col_value) {
     if (in_array($name, ['area_ha','length_km'])) {

@@ -575,7 +575,8 @@ class MultiPolygon extends Geometry {
     $coords = [];
     foreach ($this->coords as $llpos)
       $coords[] = Geometry::reprojLLPos($reprojPos, $llpos);
-    return new self($coords);
+    $geom = new self($coords);
+    return $geom;
   }
   
   /*static function haggregate(array $elts) - NON UTILISE {
@@ -676,13 +677,15 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de 
 
 
 // corrige l'erreur de projection des données initiales
-function correctProjectError(Geometry $geom): Geometry {
-  $pos = $geom->aPos();
+// Les données sont en entrée en projection légale et en sortie en coord géo LonLat
+function correctProjectError(Geometry $geomProjLegale): Geometry {
+  $geomGeo = $geomProjLegale->reproject( function($pos) { return Lambert93::geo($pos); });
+  $pos = $geomGeo->aPos();
   if ($pos[1] > 53) {
-    return $geom->reproject( function($pos) { return UTM::geo('40S', Lambert93::proj($pos)); });
+    return $geomProjLegale->reproject( function($pos) { return UTM::geo('40S', $pos); });
   }
   else
-    return $geom;
+    return $geomGeo;
 }
 
 {/* ANCIENNES FONCTIONS DE GENERALISATION - PERIMEES
