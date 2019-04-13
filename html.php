@@ -157,7 +157,7 @@ else {
   if (!$geometry) {
     die("Aucun enregistrement correspondant à $tid");
   }
-  $geometry = correctProjectError(Geometry::create(json_decode($geometry, true)));
+  $geometry = correctProjectError(Geometry::fromGeoJSON(json_decode($geometry, true)));
   $center = $geometry->center();
   $zoom = Zoom::zoomForBBoxSize($geometry->bbox()->size());
   $href = "http://$_SERVER[HTTP_HOST]".dirname($_SERVER['SCRIPT_NAME'])."/map.php?"

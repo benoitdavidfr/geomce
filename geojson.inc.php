@@ -272,17 +272,17 @@ abstract class Geometry {
   protected $style; // un style peut être associé à une géométrie, toujours un array, par défaut []
   
   // crée une géométrie à partir du json_decode() du GeoJSON
-  static function create(array $geom, array $style=[]): Geometry {
+  static function fromGeoJSON(array $geom, array $style=[]): Geometry {
     if (isset($geom['type']) && in_array($geom['type'], self::HOMOGENEOUSTYPES) && isset($geom['coordinates']))
       return new $geom['type']($geom['coordinates']);
     elseif (isset($geom['type']) && ($geom['type']=='GeometryCollection') && isset($geom['geometries'])) {
       $geoms = [];
       foreach ($geom['geometries'] as $g)
-        $geoms[] = self::create($g);
+        $geoms[] = self::fromGeoJSON($g);
       return new GeometryCollection($geoms);
     }
     else
-      throw new Exception("Erreur de Geometry::create(".json_encode($geom).")");
+      throw new Exception("Erreur de Geometry::fromGeoJSON(".json_encode($geom).")");
   }
   
   // fonction d'initialisation valable pour toutes les géométries homogènes
@@ -349,6 +349,13 @@ abstract class Geometry {
     return $coords;
   }
   
+  // arrondie les coordonnées en fonction du nbre de chiffres défini par $precision
+  function round(int $precision) {
+    return $this->reproject( function($pos) use ($precision) {
+      return [round($pos[0], $precision), round($pos[1], $precision)];
+    });
+  }
+    
   function dissolveCollection(): array { return [$this]; }
   
   // Décompose une géométrie en un array de géométries élémentaires (Point/LineString/Polygon)
@@ -396,22 +403,22 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de 
   if (!isset($_GET['test']))
     echo "<a href='?test=Geometry'>Test unitaire de la classe Geometry</a><br>\n";
   elseif ($_GET['test']=='Geometry') {
-    $pt = Geometry::create(['type'=>'Point', 'coordinates'=> [0,0]]);
+    $pt = Geometry::fromGeoJSON(['type'=>'Point', 'coordinates'=> [0,0]]);
     echo "pt=$pt<br>\n";
     echo "reproject(pt)=",$pt->reproject(function(array $pos) { return $pos; }),"<br>\n";
-    $ls = Geometry::create(['type'=>'LineString', 'coordinates'=> [[0,0],[1,1]]]);
+    $ls = Geometry::fromGeoJSON(['type'=>'LineString', 'coordinates'=> [[0,0],[1,1]]]);
     echo "ls=$ls<br>\n";
     echo "ls->center()=",json_encode($ls->center()),"<br>\n";
-    $mls = Geometry::create(['type'=>'MultiLineString', 'coordinates'=> [[[0,0],[1,1]]]]);
+    $mls = Geometry::fromGeoJSON(['type'=>'MultiLineString', 'coordinates'=> [[[0,0],[1,1]]]]);
     echo "mls=$mls<br>\n";
     echo "mls->center()=",json_encode($mls->center()),"<br>\n";
-    $pol = Geometry::create(['type'=>'Polygon', 'coordinates'=> [[[0,0],[1,0],[1,1],[0,0]]]]);
+    $pol = Geometry::fromGeoJSON(['type'=>'Polygon', 'coordinates'=> [[[0,0],[1,0],[1,1],[0,0]]]]);
     echo "pol=$pol<br>\n";
     echo "pol->center()=",json_encode($pol->center()),"<br>\n";
-    $mpol = Geometry::create(['type'=>'MultiPolygon', 'coordinates'=> [[[[0,0],[1,0],[1,1],[0,0]]]]]);
+    $mpol = Geometry::fromGeoJSON(['type'=>'MultiPolygon', 'coordinates'=> [[[[0,0],[1,0],[1,1],[0,0]]]]]);
     echo "mpol=$mpol<br>\n";
     echo "mpol->center()=",json_encode($mpol->center()),"<br>\n";
-    $gc = Geometry::create(['type'=>'GeometryCollection', 'geometries'=> [$ls->asArray(), $mls->asArray(), $mpol->asArray()]]);
+    $gc = Geometry::fromGeoJSON(['type'=>'GeometryCollection', 'geometries'=> [$ls->asArray(), $mls->asArray(), $mpol->asArray()]]);
     echo "gc=$gc<br>\n";
     echo "gc->center()=",json_encode($gc->center()),"<br>\n";
     echo "gc->reproject()=",$gc->reproject(function(array $pos) { return $pos; }),"<br>\n";
@@ -426,7 +433,7 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de 
         ],
       ]
     ] as $geom) {
-      echo json_encode($geom),' -> [',implode(',',Geometry::create($geom)->decompose()),"]<br>\n";
+      echo json_encode($geom),' -> [',implode(',',Geometry::fromGeoJSON($geom)->decompose()),"]<br>\n";
     }
   }
 }
@@ -466,8 +473,8 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de 
   if (!isset($_GET['test']))
     echo "<a href='?test=MultiPoint'>Test unitaire de la classe MultiPoint</a><br>\n";
   elseif ($_GET['test']=='MultiPoint') {
-    $mpt = Geometry::create(['type'=>'MultiPoint', 'coordinates'=>[]]);
-    $mpt = Geometry::create(['type'=>'MultiPoint', 'coordinates'=>[[0,0],[1,1]]]);
+    $mpt = Geometry::fromGeoJSON(['type'=>'MultiPoint', 'coordinates'=>[]]);
+    $mpt = Geometry::fromGeoJSON(['type'=>'MultiPoint', 'coordinates'=>[[0,0],[1,1]]]);
     echo "$mpt ->center() = ",json_encode($mpt->center()),"<br>\n";
     echo "$mpt ->aPos() = ",json_encode($mpt->aPos()),"<br>\n";
     echo "$mpt ->bbox() = ",$mpt->bbox(),"<br>\n";
@@ -668,7 +675,7 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de 
   if (!isset($_GET['test']))
     echo "<a href='?test=GeometryCollection'>Test unitaire de la classe GeometryCollection</a><br>\n";
   elseif ($_GET['test']=='GeometryCollection') {
-    $gc = Geometry::create(['type'=>'GeometryCollection', 'geometries'=> []]);
+    $gc = Geometry::fromGeoJSON(['type'=>'GeometryCollection', 'geometries'=> []]);
     echo "gc=$gc<br>\n";
     //echo "gc->center()=",json_encode($gc->center()),"<br>\n";
     echo "gc->reproject()=",$gc->reproject(function(array $pos) { return $pos; }),"<br>\n";
@@ -677,66 +684,29 @@ if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de 
 
 
 // corrige l'erreur de projection des données initiales
-// Les données sont en entrée en projection légale et en sortie en coord géo LonLat
-function correctProjectError(Geometry $geomProjLegale): Geometry {
-  $geomGeo = $geomProjLegale->reproject( function($pos) { return Lambert93::geo($pos); });
-  $pos = $geomGeo->aPos();
-  if ($pos[1] > 53) {
-    return $geomProjLegale->reproject( function($pos) { return UTM::geo('40S', $pos); });
-  }
-  else
-    return $geomGeo;
-}
-
-{/* ANCIENNES FONCTIONS DE GENERALISATION - PERIMEES
-// généralise la géométrie passée comme geometry GeoJSON en fonction du niveau de zoom
-function generalize0(int $zoom, Geometry $geom): Geometry {
-  if (($geom->type()=='Point') || ($zoom >= 14) || ($zoom == -1))
-    return $geom;
-  else
-    return new Point($geom->center());
-}
-
-// généralise la géométrie passée comme geometry GeoJSON en fonction du niveau de zoom
-// renvoie un rectangle si l'objet est gros
-// Pas lisible
-function generalize1(int $zoom, Geometry $geom): Geometry {
-  if (($geom->type()=='Point') || ($zoom > 10) || ($zoom == -1))
-    return $geom;
-  $bbox = $geom->bbox();
-  if ($bbox->size() * Zoom::sizeOfADegreeInMeters() < Zoom::pixelSize($zoom) * 10)
-    return new Point($bbox->center());
-  else
-    return new Polygon($bbox->polygon());
-}
-*/}
-
-{/* CODE PERIME
-if (basename(__FILE__) == basename($_SERVER['PHP_SELF'])) { // Test unitaire de la fonction desagregate
-  if (!isset($_GET['test']))
-    echo "<a href='?test=desagregate'>Test unitaire de la fonction desagregate</a><br>\n";
-  elseif ($_GET['test']=='desagregate') {
-    echo "Test de desagregate<br>\n";
-    foreach ([
-      [ 'type'=>'MultiPoint', 'coordinates'=>[[0,0], [1,1]]],
-      [ 'type'=> 'GeometryCollection',
-        'geometries'=> [
-          ['type'=>'MultiPoint', 'coordinates'=>[[0,0], [1,1]]],
-        ],
-      ],
-      [ 'type'=>'MultiPolygon',
-        'coordinates'=> [
-          [[[0,0],[1,0],[1,1],[0,0]]],
-          [[[10,10],[11,10],[11,11],[10,10]]],
-        ]
-      ],
-    ] as $geom) {
-      $desagregate = desagregate(10, $geom);
-      echo json_encode($geom)," desagregate -> ",json_encode($desagregate),"<br>\n";
+// Les données en entrée sont 
+// - soit en projection légale (Lambert93, UTM, ...)
+// - soit en coord. géo. Lonlat decdeg généré à partir de coord. en proj. légales comme si elles étaient en Lambert93
+// Produit des coordonnées en coord. géo. Lonlat decdeg 
+function correctProjectError(Geometry $geom): Geometry {
+  $pos = $geom->aPos();
+  if ($pos[1] > 100) { // coord. en proj. légales
+    $geomGeo = $geom->reproject( function($pos) { return Lambert93::geo($pos); });
+    $pos = $geomGeo->aPos();
+    if ($pos[1] > 53) { // les coordonnées en entrée étaient en UTM-40S
+      return $geom->reproject( function($pos) { return UTM::geo('40S', $pos); });
     }
+    else
+      return $geomGeo;
+  }
+  else { // pseudo coord. géo.
+    if ($pos[1] > 53) { // les coordonnées en entrée étaient initialement en UTM-40S et ont été passé en géo par Lambert93
+      return $geom->reproject( function($geopos) { return UTM::geo('40S', Lambert93::proj($geopos)); });
+    }
+    else
+      return $geom;
   }
 }
-*/}
 
 /*PhpDoc: functions
 name: Geometry

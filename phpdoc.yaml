@@ -1,10 +1,18 @@
 title: geomce - carte GéoMCE
 path: /gexplor/geomce
 doc: |
-  Réalisation d'une carte Leaflet des mesures GéoMCE.
-  Dans la carte, la localisation des mesures sur La Réunion a été corrigée des erreurs de projection.
-  Les mesure_emprise sont généralisées pour les zoom < 14 sous la forme d'un point ou d'un rectangle.
-  Les grandes mesures sont désagrégés en fonction du zoom.
+  L'objectif de ce projet est d'effectuer un contrôle qualité du processus de publication de GéoMCE CPII -> Cerema -> Géoportail
+  La démarche est de stocker les versions successives des flux générés:
+    - export GéoMCE produit par le CPII (export PotsgreSQL) (id CPII)
+    - export Céréma vers le Géoportail (SHP, WFS, GeoJSON ?) (id Cerema)
+    - flux WFS du Géoportail (id IGNGP)
+  et d'être en capacité sur ces stockages de:
+    - les visualiser sous la forme de cartes Leaflet
+    - les croiser entre eux afin notamment de produire des deltas
+    - produire des statistiques simples sur chaque lot et 
+  
+  == 
+  
   
   Projet publié sur https://github.com/benoitdavidfr/geomce
   
@@ -56,7 +64,7 @@ doc: |
     
 journal: |
   11/4/2019
-    chargement de la nouvelle base
+    chargement du nouvel export CPII
     découpage du fichier source en 2 fichiers
       - un fichier de création de tables et exécution par phppgadmin
       - un fichier d'insertion des données
@@ -78,6 +86,10 @@ journal: |
     ajout de la surface et de la longueur des mesures
   4/3/2019
     création du projet
+    Réalisation d'une carte Leaflet des mesures GéoMCE issues de l'export produit par CPII.
+    Dans la carte, la localisation des mesures sur La Réunion a été corrigée des erreurs de projection.
+    Les mesure_emprise sont généralisées pour les zoom < 14 sous la forme d'un point ou d'un rectangle.
+    Les grandes mesures sont désagrégés en fonction du zoom.
 htmlFiles:
 phpScripts:
   - /gexplor/geomce/index.php

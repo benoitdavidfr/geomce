@@ -151,7 +151,7 @@ while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
   //echo 'tuple='; var_dump($tuple);
   if (is_null($tuple['geometry']))
     continue;
-  $geometry = Geometry::create(json_decode($tuple['geometry'], true));
+  $geometry = Geometry::fromGeoJSON(json_decode($tuple['geometry'], true));
   $geometry = correctProjectError($geometry);
   if ($reqBbox && !$reqBbox->intersects($geometry->bbox()))
     continue;
