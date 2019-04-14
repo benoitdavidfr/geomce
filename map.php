@@ -16,9 +16,9 @@ $lon = isset($_GET['lon']) ? $_GET['lon'] : 1;
 $zoom = isset($_GET['zoom']) ? $_GET['zoom'] : 8;
 $table = isset($_GET['table']) ? $_GET['table'] : null;
 $mid = isset($_GET['mid']) ? $_GET['mid'] : null;
-$geomceUrl = ($_SERVER['SERVER_NAME']=='localhost') ? "'http://localhost/gexplor/geomce'"
-    : (($_SERVER['SERVER_NAME']=='bdavid.alwaysdata.net') ? "'https://bdavid.alwaysdata.net/gexplor/geomce'"
-    : "'https://gexplor.fr/geomce'");
+$geomceUrl = ($_SERVER['SERVER_NAME']=='localhost') ? 'http://localhost/gexplor/geomce'
+    : (($_SERVER['SERVER_NAME']=='bdavid.alwaysdata.net') ? 'https://bdavid.alwaysdata.net/gexplor/geomce'
+    : 'https://gexplor.fr/geomce');
 ?>
 <!DOCTYPE HTML><html><head><title>Carte GéoMCE</title><meta charset='UTF-8'>
 <!-- meta nécessaire pour le mobile -->
@@ -61,28 +61,14 @@ var bases = {
 };
 map.addLayer(bases["Cartes IGN"]);
 
-var wmtsurl = 'http://wxs.ign.fr/k9nf5972y39b2ks5nmmk9qng/geoportail/wmts?'
-            + 'service=WMTS&version=1.0.0&request=GetTile&tilematrixSet=PM&height=256&width=256&'
-            + 'tilematrix={z}&tilecol={x}&tilerow={y}';
+var geomceUrl = '<?php echo $geomceUrl;?>';
 var overlays = {
-  /*"protoIgn": new L.TileLayer.WMS('http://gpp3-wxs.ign.fr/k9nf5972y39b2ks5nmmk9qng/geoportail/v/wms',{
-    layers: 'MESURES_COMPENSATOIRES_ENVIRONNEMENTALES',
-    format: 'image/png',
-    transparent: true,
-    attribution: "&copy; <a href='http://www.ecologique-solidaire.gouv.fr'>IGN</a>"
-  }),*/
-  /*"protoIgnWmts": new L.TileLayer(
-    wmtsurl + '&layer=ORTHOIMAGERY.ORTHOPHOTOS&format=image/jpeg&style=normal',
-    { format: 'image/png', minZoom: 0, maxZoom: 20, detectRetina: true,
-      attribution: "&copy; <a href='http://www.ecologique-solidaire.gouv.fr'>IGN</a>"
-    }
-  ),*/
-  "mesures_emprises" : new L.UGeoJSONLayer({
+  "CPII20190226direct" : new L.UGeoJSONLayer({
     lyrid: 'maps/geomce/mesures_emprises',
-    endpoint: <?php echo $geomceUrl;?>+'/geojson.php/mesures_emprises',
+    endpoint: geomceUrl+'/geojson.php/CPII/20190226/direct',
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
-        '<b><a href="'+<?php echo $geomceUrl;?>+'/html.php/mesures_emprises/'
+        '<b><a href="'+geomceUrl+'/html.php/CPII/20190226/direct/'
         +feature.properties.mesure_id+'" target="_blank">mesures_emprises</a></b><br>'
         +'<pre>'+JSON.stringify(feature.properties,null,' ')+'</pre>'
       );
@@ -90,7 +76,7 @@ var overlays = {
     pointToLayer: function(feature, latlng) {
       return L.marker(latlng, {
         icon: L.icon({
-          iconUrl: <?php echo $geomceUrl;?>+'/marker.php/'+feature.style["marker-symbol"],
+          iconUrl: geomceUrl+'/marker.php/'+feature.style["marker-symbol"],
           iconSize: [20,20], iconAnchor: [10,10], popupAnchor: [0,0]
         })
       });
@@ -99,12 +85,12 @@ var overlays = {
     maxZoom: 21,
     usebbox: true
   }),
-  "mesures_communes" : new L.UGeoJSONLayer({
+  "CPII20190226commune" : new L.UGeoJSONLayer({
     lyrid: 'maps/geomce/mesures_communes',
-    endpoint: <?php echo $geomceUrl;?>+'/geojson.php/mesures_communes',
+    endpoint: geomceUrl+'/geojson.php/CPII/20190226/commune',
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
-        '<b><a href="'+<?php echo $geomceUrl;?>+'/html.php/mesures_communes/'
+        '<b><a href="'+geomceUrl+'/html.php/CPII/20190226/commune/'
         +feature.properties.mesure_id+'" target="_blank">mesure_commune</a></b><br>'
         +'<pre>'+JSON.stringify(feature.properties,null,' ')+'</pre>'
       );
@@ -112,7 +98,7 @@ var overlays = {
     pointToLayer: function(feature, latlng) {
       return L.marker(latlng, {
         icon: L.icon({
-          iconUrl: <?php echo $geomceUrl;?>+'/marker.php/'+feature.style["marker-symbol"],
+          iconUrl: geomceUrl+'/marker.php/'+feature.style["marker-symbol"],
           iconSize: [20,20], iconAnchor: [10,10], popupAnchor: [10,10]
         })
       });
@@ -125,13 +111,13 @@ var overlays = {
 if (!$table || !$mid) echo <<<EOT
 };
 //map.addLayer(overlays["mesure_emprise"]);
-map.addLayer(overlays["mesures_emprises"]);
+map.addLayer(overlays["CPII20190226direct"]);
 
 EOT;
 else echo <<<EOT
   "mesure" : new L.UGeoJSONLayer({
     lyrid: 'maps/geomce/$table',
-    endpoint: $geomceUrl+'/geojson.php/$table/$mid',
+    endpoint: geomceUrl+'/geojson.php/$table/$mid',
     minZoom: 0,
     maxZoom: 21,
     usebbox: true

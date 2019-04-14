@@ -29,8 +29,6 @@ journal: |
   - généralisation avec désagrégation
 */
 
-if ($_SERVER['SERVER_NAME']=='localhost')
-  require __DIR__.'/localtest.inc.php'; // permet de tester les scripts en local
 require __DIR__.'/geojson.inc.php';
 
 //header('Content-type: text/plain'); print_r($_SERVER);
@@ -40,10 +38,14 @@ function doc(array $params=[]) {
   echo "<h2>Génération GeoJSON de la base MCE</h2>\n";
   if ($params)
     echo "params=",json_encode($params),"<br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_emprise'>table mesure_emprise (20190226)</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_commune'>table mesure_commune (20190226)</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_emprises'>table mesures_emprises (20190411)</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_communes'>table mesures_communes (20190411)</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/CPII/20190226/direct'>
+    export CPII 20190226 direct</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_commune'>
+    export CPII 20190226 commune</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/CPII/20190411/direct'>
+    export CPII 20190411 direct</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/CPII/20190411/commune'>
+    export CPII 20190411 commune</a><br>\n";
   die();
 }
 
@@ -53,12 +55,8 @@ function doc(array $params=[]) {
     doc();
   }
   $params = explode('/', $params);
-  if (count($params) == 2) {
-    $table_name = $params[0];
-    $tid = $params[1];
-  }
-  elseif (count($params) == 1) {
-    $table_name = $params[0];
+  if (count($params) == 3) {
+    $params = ['source'=> $params[0], 'date_export'=> $params[1], 'georef'=> $params[2]];
     $tid = null;
   }
   else {
@@ -77,13 +75,13 @@ function doc(array $params=[]) {
 }
 
 // les symboles des points non généralisés/généralisés
-$marker_symbols = ($table_name == 'mesure_emprise') ? ['circle/0000FF', 'square/3BB9FF'] : ['diam/0000FF', 'square/3BB9FF'];
+$marker_symbols = ($params['georef'] == 'direct') ? ['circle/0000FF', 'square/3BB9FF'] : ['diam/0000FF', 'square/3BB9FF'];
 
 
 // schema de la table
 function ischema(string $table_name): array {
   $query = "select table_schema, table_name, column_name, ordinal_position, data_type, udt_name
-  from INFORMATION_SCHEMA.COLUMNS where table_schema='public' and table_name = '$table_name'";
+  from INFORMATION_SCHEMA.COLUMNS where table_schema='public' and table_name = 'mce'";
   $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 
   $ischema = []; // schema de la table
@@ -100,8 +98,7 @@ function ischema(string $table_name): array {
     ];
   }
 
-  //header('Content-type: text/plain');
-  //echo 'schema='; print_r($ischema); die();
+  //header('Content-type: text/plain'); echo 'schema='; print_r($ischema); die();
   return $ischema;
 }
 
@@ -109,7 +106,7 @@ $dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce
     or die('Could not connect: ' . pg_last_error());
 
 // schema de la table
-if (!($ischema = ischema($table_name))) {
+if (!($ischema = ischema('mce'))) {
   die("Table $table_name incorrecte");
 }
 
@@ -117,17 +114,17 @@ if (!($ischema = ischema($table_name))) {
 $columns = []; // liste des nom de colonnes sauf celle correspondant à la géométrie
 $geomColumn = null; // nom de la colonne correspondant à la géométrie
 foreach ($ischema['byPos'] as $pos => $column) {
-  if ($column['udt_name']<>'geometry')
+  if ($column['udt_name']<>'geography')
     $columns[] = $column['column_name'];
   else
     $geomColumn = $column['column_name'];
 }
 
 $query = "SELECT ".implode(', ', $columns).",
-ST_AsGeoJSON($geomColumn, ".Geometry::$precision.") as geometry,
+ST_AsGeoJSON($geomColumn) as geometry,
 ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
-FROM public.$table_name"
-.($tid ? " where mesure_id=$tid" : '');
+FROM public.mce
+where source='$params[source]' and date_export='$params[date_export]' and georef='$params[georef]'";
 
 //echo "query=$query\n";
 $result = pg_query($query)
@@ -138,7 +135,9 @@ header('Content-type: application/json');
 
 echo "{ \"type\": \"FeatureCollection\",\n"
   ."\"parameters\":".json_encode([
-    'table_name'=> $table_name,
+    'source'=> $params['source'],
+    'date_export'=> $params['date_export'],
+    'georef'=> $params['georef'],
     'zoom'=> $zoom,
     'bbox'=> $reqBbox,
     'tid'=> $tid,
@@ -152,7 +151,6 @@ while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
   if (is_null($tuple['geometry']))
     continue;
   $geometry = Geometry::fromGeoJSON(json_decode($tuple['geometry'], true));
-  $geometry = correctProjectError($geometry);
   if ($reqBbox && !$reqBbox->intersects($geometry->bbox()))
     continue;
   $feature = ['type'=> 'Feature', 'properties'=>[]];

@@ -126,6 +126,8 @@ if ($_GET['action']=='load') {
     if ($geom)
       $geom = correctProjectError($geom);
     //echo "geom="; print_r($geom); echo "\n";
+    if (!isset($tuple['mesure_id']))
+      $tuple['mesure_id'] = $featno;
     $insert = "insert into public.mce (".implode(', ', array_merge(array_keys($addedColumns), $columns)).", geom) values(";
     foreach ($addedColumns as $colname => $value) {
       $insert .= "'$value', ";
