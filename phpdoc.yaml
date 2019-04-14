@@ -3,9 +3,9 @@ path: /gexplor/geomce
 doc: |
   L'objectif de ce projet est d'effectuer un contrôle qualité du processus de publication de GéoMCE CPII -> Cerema -> Géoportail
   La démarche est de stocker les versions successives des flux générés:
-    - export GéoMCE produit par le CPII (export PotsgreSQL) (id CPII)
-    - export Céréma vers le Géoportail (SHP, WFS, GeoJSON ?) (id Cerema)
-    - flux WFS du Géoportail (id IGNGP)
+    - export GéoMCE produit par le CPII (export PotsgreSQL) (id cpii)
+    - export Céréma vers le Géoportail (SHP, WFS, GeoJSON ?) (id cerema)
+    - flux WFS du Géoportail (id igngp)
   et d'être en capacité sur ces stockages de:
     - les visualiser sous la forme de cartes Leaflet
     - les croiser entre eux afin notamment de produire des deltas

@@ -11,12 +11,11 @@ doc: |
     http://gexplor.fr/geomce/html.php/mesure_emprise
     http://gexplor.fr/geomce/html.php/mesure_commune/xxxxx
 journal: |
+  14/3/2019:
+  - nvlle version multi livraisons
   4/3/2019:
   - version finalisée
 */
-
-if ($_SERVER['SERVER_NAME']=='localhost')
-  require __DIR__.'/localtest.inc.php'; // permet de tester les scripts en local
 require __DIR__.'/geojson.inc.php';
 
 function doc(array $params=[]) {
@@ -27,9 +26,18 @@ function doc(array $params=[]) {
   echo "L'affichage d'une seule mesure permet d'appeler une carte de la mesure.<br>\n";
   if ($params)
     echo "paramètres d'appel: ",json_encode($params),"<br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_emprises'>table mesure_emprise</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesures_communes'>table mesure_commune</a><br>\n";
-  die();
+  $deliveries = [
+    'cpii'=> ['20190411', '20190226'],
+  ];
+  echo "<ul>\n";
+  foreach ($deliveries as $source => $dates) {
+    foreach ($dates as $date) {
+      echo "<li>$source $date ",
+        "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mce$source${date}direct'>direct</a>\n",
+        "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mce$source${date}commune'>commune</a></li>\n";
+    }
+  }
+  die("</ul>\n\n");
 }
 
 { // construction des paramètres
@@ -40,11 +48,11 @@ function doc(array $params=[]) {
   $params = explode('/', $params);
   if (count($params) == 2) {
     $table_name = $params[0];
-    $tid = $params[1];
+    $mid = $params[1];
   }
   elseif (count($params) == 1) {
     $table_name = $params[0];
-    $tid = null;
+    $mid = null;
   }
   else {
     doc($params);
@@ -89,7 +97,7 @@ if (!($ischema = ischema($table_name))) {
 $columns = []; // liste des nom de colonnes sauf celle correspondant à la géométrie
 $geomColumn = null; // nom de la colonne correspondant à la géométrie
 foreach ($ischema['byPos'] as $pos => $column) {
-  if ($column['udt_name']=='geometry')
+  if ($column['udt_name']=='geography')
     $geomColumn = $column['column_name'];
   else
     $columns[] = $column['column_name'];
@@ -99,14 +107,14 @@ $query = "SELECT ".implode(', ', $columns).",
 ST_AsGeoJSON($geomColumn, ".Geometry::$precision.") as geometry,
 ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
 FROM public.$table_name"
-.($tid ? " where mesure_id=$tid" : '');
+.($mid ? " where mesure_id=$mid" : '');
 echo "<pre>query=$query</pre>\n";
 
 //echo "query=$query\n";
 $result = pg_query($query)
   or die('Query failed: ' . pg_last_error());
   
-if (!$tid) {
+if (!$mid) {
   $columns = array_diff($columns, ['si_metier','numero_dossier','geometry']);
   $sum = ['count'=> 0, 'area_ha'=> 0, 'length_km'=> 0];
   echo "<table border=1>\n";
@@ -155,12 +163,14 @@ else {
     $geometry = $tuple['geometry'];
   }
   if (!$geometry) {
-    die("Aucun enregistrement correspondant à $tid");
+    die("Aucun enregistrement correspondant à $mid");
   }
-  $geometry = correctProjectError(Geometry::fromGeoJSON(json_decode($geometry, true)));
+  $geometry = Geometry::fromGeoJSON(json_decode($geometry, true));
+  //echo "geometry=$geometry<br>\n";
   $center = $geometry->center();
+  //echo "center="; print_r($center); echo "<br>\n";
   $zoom = Zoom::zoomForBBoxSize($geometry->bbox()->size());
   $href = "http://$_SERVER[HTTP_HOST]".dirname($_SERVER['SCRIPT_NAME'])."/map.php?"
-        ."table=$table_name&amp;mid=$tid&amp;lon=$center[0]&amp;lat=$center[1]&amp;zoom=$zoom";
+        ."table=$table_name&amp;mid=$mid&amp;lon=$center[0]&amp;lat=$center[1]&amp;zoom=$zoom";
   echo "<a href='$href'>Carte de la mesure</a><br>\n";
 }

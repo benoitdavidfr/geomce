@@ -38,13 +38,13 @@ function doc(array $params=[]) {
   echo "<h2>Génération GeoJSON de la base MCE</h2>\n";
   if ($params)
     echo "params=",json_encode($params),"<br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/CPII/20190226/direct'>
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226direct'>
     export CPII 20190226 direct</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mesure_commune'>
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226commune'>
     export CPII 20190226 commune</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/CPII/20190411/direct'>
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190411direct'>
     export CPII 20190411 direct</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/CPII/20190411/commune'>
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190411commune'>
     export CPII 20190411 commune</a><br>\n";
   die();
 }
@@ -55,16 +55,20 @@ function doc(array $params=[]) {
     doc();
   }
   $params = explode('/', $params);
-  if (count($params) == 3) {
-    $params = ['source'=> $params[0], 'date_export'=> $params[1], 'georef'=> $params[2]];
-    $tid = null;
+  if (count($params) == 1) {
+    $table_name = $params[0];
+    $georef = preg_match('!direct$!', $table_name) ? 'direct' : 'commune';
+    $mid = null;
+  }
+  elseif (count($params) == 2) {
+    $table_name = $params[0];
+    $georef = preg_match('!direct$!', $table_name) ? 'direct' : 'commune';
+    $mid = $params[1];
   }
   else {
     doc($params);
   }
-  //echo "table_name=$table_name\ntid=$tid\n"; die();
 
-  //$table_name = 'mesure_emprise';
   $zoom = isset($_GET['zoom']) ? $_GET['zoom'] : (isset($_POST['zoom']) ? $_POST['zoom'] : -1);
   $nbMaxOfFeatures = 0; // 20; // si <>0 limite à ce nbre le nbre de features
   if ($reqBbox = isset($_GET['bbox']) ? $_GET['bbox'] : (isset($_POST['bbox']) ? $_POST['bbox'] : null)) {
@@ -75,7 +79,7 @@ function doc(array $params=[]) {
 }
 
 // les symboles des points non généralisés/généralisés
-$marker_symbols = ($params['georef'] == 'direct') ? ['circle/0000FF', 'square/3BB9FF'] : ['diam/0000FF', 'square/3BB9FF'];
+$marker_symbols = ($georef == 'direct') ? ['circle/0000FF', 'square/3BB9FF'] : ['diam/0000FF', 'square/3BB9FF'];
 
 
 // schema de la table
@@ -106,7 +110,7 @@ $dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce
     or die('Could not connect: ' . pg_last_error());
 
 // schema de la table
-if (!($ischema = ischema('mce'))) {
+if (!($ischema = ischema($table_name))) {
   die("Table $table_name incorrecte");
 }
 
@@ -123,8 +127,8 @@ foreach ($ischema['byPos'] as $pos => $column) {
 $query = "SELECT ".implode(', ', $columns).",
 ST_AsGeoJSON($geomColumn) as geometry,
 ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
-FROM public.mce
-where source='$params[source]' and date_export='$params[date_export]' and georef='$params[georef]'";
+FROM public.$table_name "
+.($mid ? "where mesure_id=$mid" : '');
 
 //echo "query=$query\n";
 $result = pg_query($query)
@@ -135,12 +139,10 @@ header('Content-type: application/json');
 
 echo "{ \"type\": \"FeatureCollection\",\n"
   ."\"parameters\":".json_encode([
-    'source'=> $params['source'],
-    'date_export'=> $params['date_export'],
-    'georef'=> $params['georef'],
+    'table_name'=> $table_name,
     'zoom'=> $zoom,
     'bbox'=> $reqBbox,
-    'tid'=> $tid,
+    'mid'=> $mid,
     'nbMaxOfFeatures'=> $nbMaxOfFeatures,
     'dissolveCollection'=> $dissolveCollection,
   ]).",\n"
@@ -163,7 +165,7 @@ while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
     elseif ($name <> 'geometry')
       $feature['properties'][$name] = $col_value;
   }
-  if ($tid) { // si j'affiche un seul n-uplet, affichage brut
+  if ($mid) { // si j'affiche un seul n-uplet, affichage brut
     $feature['geometry'] = $geometry->asArray();
     if ($featureno++)
       echo ",\n";

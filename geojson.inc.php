@@ -310,6 +310,7 @@ abstract class Geometry {
     
   // calcule le centre d'une liste de positions, génère une erreur si la liste est vide
   static function centerOfLPos(array $lpos): array {
+    //echo "centerOfLPos"; print_r($lpos); echo "<br>\n";
     if (!$lpos)
       throw new Exception("Erreur: Geometry::centerOfLPos() d'une liste de positions vide");
     $c = [0, 0];
@@ -319,7 +320,13 @@ abstract class Geometry {
       $c[1] += $pos[1];
       $nbre++;
     }
-    return [round($c[0]/$nbre, self::$precision), round($c[1]/$nbre, self::$precision)];
+    // Il semble qu'il y ait un bug Php sur Alwaysdata
+    //$c = [round($c[0]/$nbre, self::$precision), round($c[1]/$nbre, self::$precision)];
+    //echo "center="; print_r($c); echo "<br>\n";
+    $c[0] /= $nbre;
+    $c[1] /= $nbre;
+    //echo "center="; print_r($c); echo "<br>\n";
+    return $c;
   }
   
   abstract function nbreOfPos(): int;

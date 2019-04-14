@@ -18,16 +18,15 @@ require_once __DIR__.'/geojson.inc.php';
 
 if (!$_GET || !isset($_GET['action'])) {
   die("
-<a href='?action=truncate'>truncate mce</a><br>
-<a href='?action=load&amp;table=mesures_emprises&amp;source=CPII&amp;date=20190411&amp;georef=direct'>
-  recopie mesures_emprises dans mce CPII 20190411 direct en changeant la projection</a><br>
-<a href='?action=load&amp;table=mesures_communes&amp;source=CPII&amp;date=20190411&amp;georef=commune'>
-  recopie mesures_communes dans mce CPII 20190411 commune en changeant la projection</a><br>
+<a href='?action=load&amp;table=mesures_emprises&amp;source=cpii&amp;date=20190411&amp;georef=direct'>
+  recopie mesures_emprises dans mce cpii 20190411 direct en changeant la projection</a><br>
+<a href='?action=load&amp;table=mesures_communes&amp;source=cpii&amp;date=20190411&amp;georef=commune'>
+  recopie mesures_communes dans mce cpii 20190411 commune en changeant la projection</a><br>
   
-<a href='?action=load&amp;table=mesure_emprise&amp;source=CPII&amp;date=20190226&amp;georef=direct'>
-  recopie mesure_emprise dans mce CPII 20190226 direct en changeant la projection</a><br>
+<a href='?action=load&amp;table=mesure_emprise&amp;source=cpii&amp;date=20190226&amp;georef=direct'>
+  recopie mesure_emprise dans mce cpii 20190226 direct en changeant la projection</a><br>
 <a href='?action=load&amp;table=mesure_commune&amp;source=CPII&amp;date=20190226&amp;georef=commune'>
-  recopie mesure_commune dans mce CPII 20190226 commune en changeant la projection</a><br>
+  recopie mesure_commune dans mce cpii 20190226 commune en changeant la projection</a><br>
 
 <a href='?action=proj'>afficher public.spatial_ref_sys</a><br>
 
@@ -51,14 +50,14 @@ if ($_GET['action']=='proj') {
   die();
 }
 
-if ($_GET['action']=='truncate') {
+/*if ($_GET['action']=='truncate') {
   $dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid password=dsbune44")
       or die('Could not connect: ' . pg_last_error());
   $query = "truncate table mce";
   $result = pg_query($query)
     or die('Query failed: ' . pg_last_error());
   die("truncate ok\n");
-}
+}*/
 
 // schema de la table
 function ischema(string $table_name): array {
@@ -86,20 +85,25 @@ function ischema(string $table_name): array {
 }
 
 if ($_GET['action']=='load') {
-  $table_name = $_GET['table'];
+  header('Content-type: text/plain');
+  $srce_table = $_GET['table'];
+  $dest_table = "mce$_GET[source]$_GET[date]$_GET[georef]";
   // colonnes rajoutées dans mne
-  $addedColumns = ['source'=> $_GET['source'], 'date_export'=> $_GET['date'], 'georef'=> $_GET['georef']];
+  //$addedColumns = ['source'=> $_GET['source'], 'date_export'=> $_GET['date'], 'georef'=> $_GET['georef']];
   
   $dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid password=dsbune44")
       or die('Could not connect: ' . pg_last_error());
 
   // schema de la table
-  if (!($ischema = ischema($table_name))) {
-    die("Table $table_name incorrecte");
+  if (!($ischema = ischema($srce_table))) {
+    die("Table $srce_table incorrecte");
   }
   
-  $query = "delete from mce where source='$addedColumns[source]'"
-    ." and date_export='$addedColumns[date_export]' and georef='$addedColumns[georef]'";
+  $query = "drop table if exists $dest_table";
+  $result = pg_query($query)
+    or die('Query failed: ' . pg_last_error());
+  $query = "create table $dest_table (like mce)";
+  //echo "$query\n";
   $result = pg_query($query)
     or die('Query failed: ' . pg_last_error());
 
@@ -112,14 +116,16 @@ if ($_GET['action']=='load') {
     else
       $geomColumn = $column['column_name'];
   }
-  $query = "SELECT ".implode(', ', $columns).", ST_AsGeoJSON($geomColumn) as geometry FROM public.$table_name";
+  $query = "SELECT ".implode(', ', $columns).", ST_AsGeoJSON($geomColumn) as geometry FROM public.$srce_table";
 
   //echo "query=$query\n";
   $result = pg_query($query)
     or die('Query failed: ' . pg_last_error());
 
-  $featno = 0;
-  header('Content-type: text/plain');
+  if (!in_array('mesure_id', $columns))
+    $columns = array_merge(['mesure_id'], $columns);
+  
+  $featno = 1;
   while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
     $geom = $tuple['geometry'] ? Geometry::fromGeoJSON(json_decode($tuple['geometry'], true)) : null;
     //echo "geom="; print_r($geom); echo "\n";
@@ -128,10 +134,7 @@ if ($_GET['action']=='load') {
     //echo "geom="; print_r($geom); echo "\n";
     if (!isset($tuple['mesure_id']))
       $tuple['mesure_id'] = $featno;
-    $insert = "insert into public.mce (".implode(', ', array_merge(array_keys($addedColumns), $columns)).", geom) values(";
-    foreach ($addedColumns as $colname => $value) {
-      $insert .= "'$value', ";
-    }
+    $insert = "insert into public.$dest_table (".implode(', ', $columns).", geom) values(";
     foreach ($columns as $colname) {
       $insert .= $tuple[$colname] ? "'".str_replace("'","''",$tuple[$colname])."', " : "null, ";
     }
@@ -141,8 +144,8 @@ if ($_GET['action']=='load') {
       die('Query failed: ' . pg_last_error());
     }
     $featno++;
-    //if ($featno >= 10) break;
+    //if ($featno > 10) break;
   }
-  die("-- Fin OK, $featno enregistrements insérés\n\n\n");
+  die("-- Fin OK, ".($featno-1)." enregistrements insérés dans $dest_table\n\n\n");
 }
 die("Aucune action");

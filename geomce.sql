@@ -2,9 +2,6 @@
 -- les MCE géoréférencées précisément ou à la commune
 DROP TABLE mce;
 CREATE TABLE mce (
-  source character varying(8), -- 'CPII', 'CEREMA' ou 'IGNGP'
-  date_export character varying(8), -- date de l'export au format YYYYMMDD
-  georef character varying(8), -- 'direct' si géoréf direct, 'commune' si géoréf à la commune
   mesure_id integer,
   projet character varying,
   categorie character varying,
