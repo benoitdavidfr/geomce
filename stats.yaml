@@ -1,0 +1,43 @@
+title: dénombrement des exports GéoMCE (15/4/2019)
+cpii20190411:
+  title: export récent incomplet
+  direct:
+    nbre: 1590
+    area: 21985
+    length: 286
+    nbpoints: 999
+    collections:
+      nbre: 38
+      PLS: 6
+      LS: 15
+      PS: 11
+      PL: 6
+  commune:
+    nbre: 322
+    nbcoms: 321
+igngp20190226:
+  title: première diffusion IGNGP à partir de cpii20190226
+  direct:
+    nbre: 3038 / 3044
+    area: 24298 / 29428
+    length: 208 / 289
+    nbpoints: 951 / 951
+  commune:
+    nbre: 195
+    nbcoms: 275
+cpii20190226:
+  title: export utilisé pour la première version GP
+  direct:
+    nbre: 3005
+    area: 29428
+    length: 289
+    nbpoints: 951
+    collections:
+      nbre: 34
+      PLS: 5
+      LS: 14
+      PS: 10
+      PL: 5
+  commune:
+    nbre: 195
+    nbcoms: 275

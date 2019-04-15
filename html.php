@@ -19,6 +19,7 @@ journal: |
 require __DIR__.'/geojson.inc.php';
 
 function doc(array $params=[]) {
+  require __DIR__.'/deliveries.inc.php';
   echo "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>export</title></head><body>\n";
   echo "<h2>Affichage HTML de la base GéoMCE</h2>\n";
   echo "Affichage des tables GéoMCE sous la forme d'une table HTML<br>\n";
@@ -26,9 +27,6 @@ function doc(array $params=[]) {
   echo "L'affichage d'une seule mesure permet d'appeler une carte de la mesure.<br>\n";
   if ($params)
     echo "paramètres d'appel: ",json_encode($params),"<br>\n";
-  $deliveries = [
-    'cpii'=> ['20190411', '20190226'],
-  ];
   echo "<ul>\n";
   foreach ($deliveries as $source => $dates) {
     foreach ($dates as $date) {
@@ -106,8 +104,8 @@ foreach ($ischema['byPos'] as $pos => $column) {
 $query = "SELECT ".implode(', ', $columns).",
 ST_AsGeoJSON($geomColumn, ".Geometry::$precision.") as geometry,
 ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
-FROM public.$table_name"
-.($mid ? " where mesure_id=$mid" : '');
+FROM public.$table_name "
+.($mid ? "where num=$mid" : '');
 echo "<pre>query=$query</pre>\n";
 
 //echo "query=$query\n";
@@ -115,7 +113,7 @@ $result = pg_query($query)
   or die('Query failed: ' . pg_last_error());
   
 if (!$mid) {
-  $columns = array_diff($columns, ['si_metier','numero_dossier','geometry']);
+  $columns = array_diff($columns, ['num','si_metier','numero_dossier','geometry']);
   $sum = ['count'=> 0, 'area_ha'=> 0, 'length_km'=> 0];
   echo "<table border=1>\n";
   echo '<th>',implode('</th><th>', $columns),"</th><th>surf(ha)</th><th>long(km)</th>\n";
@@ -125,7 +123,7 @@ if (!$mid) {
       if (in_array($name, ['si_metier','numero_dossier','geometry']))
         continue;
       if ($name == 'projet') {
-        $href = "http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/$table_name/$tuple[mesure_id]";
+        $href = "http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/$table_name/$tuple[num]";
         echo "<td><a href='$href'>$col_value</a></td>\n";
         $id = '';
       }
@@ -136,7 +134,7 @@ if (!$mid) {
           printf('<td>%.2f</td>', $col_value);
         $sum[$name] += $col_value;
       }
-      else
+      elseif ($name <> 'num')
         echo "<td>$col_value</td>\n";
     }
     $sum['count']++;

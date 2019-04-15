@@ -2,7 +2,8 @@
 -- les MCE géoréférencées précisément ou à la commune
 DROP TABLE mce;
 CREATE TABLE mce (
-  mesure_id integer,
+  num integer, -- id s'il existe sinon no en sequence
+  mesure_id integer, -- id stable issu de la base
   projet character varying,
   categorie character varying,
   mo character varying,
@@ -16,5 +17,5 @@ CREATE TABLE mce (
   duree text,
   si_metier character varying,
   numero_dossier character varying,
-  geom geography -- en EPSG:4326 lon/lat
+  geom geography -- en lon/lat
 );

@@ -40,6 +40,8 @@ function doc(array $params=[]) {
     echo "params=",json_encode($params),"<br>\n";
   echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226direct'>
     export CPII 20190226 direct</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226direct/2573'>
+    export CPII 20190226 direct 2573</a><br>\n";
   echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226commune'>
     export CPII 20190226 commune</a><br>\n";
   echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190411direct'>
@@ -128,7 +130,7 @@ $query = "SELECT ".implode(', ', $columns).",
 ST_AsGeoJSON($geomColumn) as geometry,
 ST_Area($geomColumn)/10000 as area_ha, ST_Length($geomColumn)/1000 as length_km
 FROM public.$table_name "
-.($mid ? "where mesure_id=$mid" : '');
+.($mid ? "where num=$mid" : '');
 
 //echo "query=$query\n";
 $result = pg_query($query)
@@ -162,7 +164,13 @@ while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
       if ($col_value)
         $feature['properties'][$name] = round($col_value, 2);
     }
-    elseif ($name <> 'geometry')
+    elseif ($name == 'geometry')
+      continue;
+    elseif (!$col_value)
+      continue;
+    elseif ($ischema['byName'][$name]['data_type']=='integer')
+      $feature['properties'][$name] = (int)$col_value;
+    else
       $feature['properties'][$name] = $col_value;
   }
   if ($mid) { // si j'affiche un seul n-uplet, affichage brut

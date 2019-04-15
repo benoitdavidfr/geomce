@@ -63,7 +63,9 @@ doc: |
     - index.php 
     
 journal: |
-  11/4/2019
+  11-14/4/2019:
+    chgt d'objectifs du projet - l'objectif de mars était de visualiser les données -
+    le nouvel objectif est d'effectuer un controle qualité de la chaine de publication
     chargement du nouvel export CPII
     découpage du fichier source en 2 fichiers
       - un fichier de création de tables et exécution par phppgadmin

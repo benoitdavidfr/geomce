@@ -64,21 +64,19 @@ map.addLayer(bases["Cartes IGN"]);
 var geomceUrl = '<?php echo $geomceUrl;?>';
 var overlays = {
 <?php
-  $deliveries = [
-    'cpii'=> ['20190411', '20190226'],
-  ];
+  require __DIR__.'/deliveries.inc.php';
   foreach ($deliveries as $source => $dates) {
     foreach ($dates as $date) {
       foreach (['direct','commune'] as $georef) {
         $table = "mce$source$date$georef";
-      echo <<<EOT
+        echo <<<EOT
   "$table" : new L.UGeoJSONLayer({
     lyrid: 'maps/geomce/mesures_emprises',
     endpoint: geomceUrl+'/geojson.php/$table',
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
         '<b><a href="'+geomceUrl+'/html.php/$table/'
-        +feature.properties.mesure_id+'" target="_blank">$table</a></b><br>'
+        +feature.properties.num+'" target="_blank">$table</a></b><br>'
         +'<pre>'+JSON.stringify(feature.properties,null,' ')+'</pre>'
       );
     },
