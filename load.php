@@ -202,11 +202,11 @@ if (($_GET['action']=='load') && isset($_GET['flux'])) {
     while(1) {
       $url = sprintf($urlfmt, $typename, $start, $count);
       $urlmd5 = md5($url);
-      if (($contents = @file_get_contents("$urlmd5.json"))===false) {
+      if (($contents = @file_get_contents(__DIR__."/gpexports/$urlmd5.json"))===false) {
         echo "<a href='$url'>$url</a><br>\n";
         if (($contents = file_get_contents($url))===false)
           die("Erreur de lecture de $url");
-        file_put_contents("$urlmd5.json", $contents);
+        file_put_contents(__DIR__."/gpexports/$urlmd5.json", $contents);
       }
       $contents = json_decode($contents, true);
       //echo "<pre>contents="; print_r($contents); echo "</pre>\n";
