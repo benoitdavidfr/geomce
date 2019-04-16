@@ -1,18 +1,15 @@
 title: geomce - carte GéoMCE
 path: /gexplor/geomce
 doc: |
-  L'objectif de ce projet est d'effectuer un contrôle qualité du processus de publication de GéoMCE CPII -> Cerema -> Géoportail
-  La démarche est de stocker les versions successives des flux générés:
+  L'objectif de ce projet est d'effectuer une vérification du processus de publication de GéoMCE CPII -> Cerema -> Géoportail
+  La démarche est de stocker les versions successives des livraisons:
     - export GéoMCE produit par le CPII (export PotsgreSQL) (id cpii)
     - export Céréma vers le Géoportail (SHP, WFS, GeoJSON ?) (id cerema)
     - flux WFS du Géoportail (id igngp)
-  et d'être en capacité sur ces stockages de:
-    - les visualiser sous la forme de cartes Leaflet
-    - les croiser entre eux afin notamment de produire des deltas
-    - produire des statistiques simples sur chaque lot et 
-  
-  == 
-  
+  et de réaliser sur ces livraisons:
+    - une visualisation sous la forme de cartes Leaflet
+    - des croisements entre eux afin notamment de détecter des différences
+    - des statistiques simples sur chacune
   
   Projet publié sur https://github.com/benoitdavidfr/geomce
   
@@ -53,19 +50,24 @@ doc: |
     - utilisation des tests unitaires
 
   Architecture:
-    - geojson.php lit la base PgSQL et génère un flux GéoJSON généralisé et stylé en fonction du zoom et du BBox
-    - html.php lit la base PgSQL et génère une page HTML des mesures
+    - load.php lit les sources et génère une table standardisée dans la base PgSQL,
+    - geojson.php lit une table standardisée de la base PgSQL et génère un flux GéoJSON généralisé et stylé en fonction du zoom et du BBox
+    - html.php lit une table standardisée de la base PgSQL et génère une page HTML des mesures
     - geojson.inc.php implémente des fonctions communes pour les 2 scripts précédents
     - coordsys.inc.php implémente les changements de CRS
-    - localtest.inc.php simule les fonctions PgSQL pour permettre des tests locaux
     - map.php est la carte Leaflet d'affichage du flux GéoJSON, legend.php est sa légende
     - marker.php génère un symbole ponctuel en fonction du nom du symbole, de la couleur, ...
-    - index.php 
+    - index.php propose un menu
     
+  AFaire:
+    - visualiser avec QGis l'effctivité des écarts
+    - générer les tables simplifiées au chargement
+    - permettre dans diff.php de croiser 2 livraisons qqc
+     
 journal: |
-  11-14/4/2019:
+  11-15/4/2019:
     chgt d'objectifs du projet - l'objectif de mars était de visualiser les données -
-    le nouvel objectif est d'effectuer un controle qualité de la chaine de publication
+    le nouvel objectif est d'effectuer une vérification de la chaine de publication
     chargement du nouvel export CPII
     découpage du fichier source en 2 fichiers
       - un fichier de création de tables et exécution par phppgadmin

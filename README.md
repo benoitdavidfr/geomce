@@ -1,16 +1,15 @@
-# Carte GéoMCE
+# Vérification du processus de publication de GéoMCE
 
-Ce projet produit une [carte disponible ici](http://gexplor.fr/geomce) correspondant à un export de GéoMCE PgSQL.
+L'objectif de ce projet est d'effectuer une vérification du processus de publication de GéoMCE CPII -> Cerema -> Géoportail  
+La démarche est de stocker les versions successives des livraisons:
 
-Liste des fichiers:
-  - geojson.php lit la base PgSQL et génère un flux GéoJSON généralisé et stylé en fonction du zoom et du BBox
-  - html.php lit la base PgSQL et génère une page HTML des mesures
-  - geojson.inc.php implémente des fonctions communes aux 2 scripts précédents
-  - coordsys.inc.php implémente les changements de CRS
-  - localtest.inc.php simule les fonctions PgSQL pour permettre des tests locaux
-  - map.php est la carte Leaflet d'affichage du flux GéoJSON, legend.php est sa légende
-  - marker.php génère un symbole ponctuel en fonction du nom du symbole, de la couleur, ...
-  - index.php est la page d'accueil
-  - phpdoc.yaml est un fichier de documentation
-  - legendimg contient des images utilisées dans la légende
-  - 20190226 contient la livraison de l'export du 26/02/2019.
+  - export GéoMCE produit par le CPII (export PotsgreSQL) (id cpii)
+  - export Céréma vers le Géoportail (SHP, WFS, GeoJSON ?) (id cerema)
+  - flux WFS du Géoportail (id igngp)
+  
+et de réaliser sur ces livraisons:
+  - une visualisation sous la forme de cartes Leaflet
+  - des croisements entre eux afin notamment de détecter des différences
+  - des statistiques simples sur chacune
+
+Résultats [disponibles ici](http://gexplor.fr/geomce).

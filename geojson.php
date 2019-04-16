@@ -20,6 +20,8 @@ doc: |
   Cette propriété est ensuite utilisée dans map.php pour définir le symbole à afficher.
 
 journal: |
+  15/4/2019:
+  - ajout possibilité de générer un fichier GeoJSON en CLI
   11-12/4/2019:
   - adaptation à la livraison du 11/4/2019
   5/3/2019:
@@ -51,7 +53,32 @@ function doc(array $params=[]) {
   die();
 }
 
-{ // construction des paramètres
+if (php_sapi_name() == 'cli') {
+  //echo "argc=$argc\n"; die();
+  if ($argc <= 1) {
+    echo "usage: php $argv[0] {table}\n";
+    echo "Tables disponibles:\n";
+    $dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid_geomce password=geomce")
+        or die('Could not connect: ' . pg_last_error());
+    $query = "select table_name from INFORMATION_SCHEMA.TABLES where table_schema='public'";
+    $result = pg_query($query) or die('Query failed: ' . pg_last_error());
+    while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+      if (preg_match('!^mce(cpii|igngp|cerema)\d+!', $tuple['table_name']))
+        echo " - $tuple[table_name]\n";
+    }
+    die();
+  }
+  else {
+    $table_name = $argv[1];
+    $georef = preg_match('!direct$!', $table_name) ? 'direct' : 'commune';
+    $mid = null;
+    $zoom = -1;
+    $nbMaxOfFeatures = 0;
+    $reqBbox = null;
+    $dissolveCollection = false;
+  }
+}
+else { // construction des paramètres en mode non CLI
   $params = substr($_SERVER['PHP_SELF'], strlen($_SERVER['SCRIPT_NAME'])+1);
   if (!$params) {
     doc();
@@ -139,15 +166,21 @@ $result = pg_query($query)
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json');
 
+$parameters = [
+  'table_name'=> $table_name,
+];
+if ($zoom <> -1)
+  $parameters['zoom'] = $zoom;
+if ($reqBbox)
+  $parameters['bbox'] = $reqBbox;
+if ($mid)
+  $parameters['mid'] = $mid;
+if ($nbMaxOfFeatures)
+  $parameters['nbMaxOfFeatures'] = $nbMaxOfFeatures;
+if ($dissolveCollection)
+  $parameters['dissolveCollection'] = $dissolveCollection;
 echo "{ \"type\": \"FeatureCollection\",\n"
-  ."\"parameters\":".json_encode([
-    'table_name'=> $table_name,
-    'zoom'=> $zoom,
-    'bbox'=> $reqBbox,
-    'mid'=> $mid,
-    'nbMaxOfFeatures'=> $nbMaxOfFeatures,
-    'dissolveCollection'=> $dissolveCollection,
-  ]).",\n"
+  ."\"parameters\":".json_encode($parameters).",\n"
   ."\"features\": [\n";
 $featureno = 0;
 while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
