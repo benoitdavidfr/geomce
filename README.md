@@ -13,3 +13,9 @@ et de réaliser sur ces livraisons:
   - des statistiques simples sur chacune
 
 Résultats [disponibles ici](http://gexplor.fr/geomce).
+
+Les exports sont disponibles:
+  - [export GéoMCE géoréf. direct du 26/2/2019](https://benoitdavidfr.github.io/geomce/mcecpii20190226direct.geojson)
+  - [export GéoMCE géoréf. à la commune du 26/2/2019](https://benoitdavidfr.github.io/geomce/mcecpii20190226commune.geojson)
+  - [WFS Géoportail géoréf. direct du 26/2/2019](https://benoitdavidfr.github.io/geomce/mceigngp20190226direct.geojson)
+  - [WFS Géoportail géoréf. à la commune du 26/2/2019](https://benoitdavidfr.github.io/geomce/mceigngp20190226commune.geojson)
