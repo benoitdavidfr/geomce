@@ -144,7 +144,8 @@ if (($_GET['action']=='load') && isset($_GET['table'])) {
     $tuple['num'] = isset($tuple['mesure_id']) ? $tuple['mesure_id'] : $featno+1;
     $insert = "insert into public.$dest_table (".implode(', ', $columns).", geom) values(";
     foreach ($columns as $colname) {
-      $insert .= $tuple[$colname] ? "'".str_replace("'","''",$tuple[$colname])."', " : "null, ";
+      $val = $tuple[$colname];
+      $insert .= ($val ? "'".str_replace("'","''",$val)."'" : 'null').', ';
     }
     $insert .= ($geom ? "ST_GeomFromGeoJSON('$geom')" : 'null').');';
     if (!pg_query($insert)) {
@@ -152,7 +153,7 @@ if (($_GET['action']=='load') && isset($_GET['table'])) {
       die('line '.__LINE__.', Query failed: ' . pg_last_error());
     }
     $featno++;
-    //if ($featno > 10) break;
+    //if ($featno >= 100) break;
   }
   die("-- Fin OK, $featno enregistrements insérés dans $dest_table\n\n\n");
 }

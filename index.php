@@ -10,7 +10,7 @@ journal: |
   - version finalisée
 */
 echo "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>GéoMCE</title></head><body>\n";
-echo "<h2>Contrôle qualité des exports GéoMCE transmis</h2>\n";
+echo "<h2>Vérification du processus de publication des exports GéoMCE</h2>\n";
 
 if ($_SERVER['SERVER_NAME']=='localhost')
   echo "<a href='load.php' target='_blank'>chargement des tables</a><br>\n";
@@ -19,6 +19,7 @@ echo "<a href='stats.php' target='_blank'>stats</a>,
 echo "<a href='geojson.php' target='_blank'>Flux GéoJSON</a>,
   <a href='html.php' target='_blank'>Affichage tables</a><br>\n";
 echo "<a href='map.php' target='_blank'>carte</a> et sa <a href='legend.php' target='_blank'>légende</a><br>\n";
+echo "<a href='https://github.com/benoitdavidfr/geomce' target='blank'>Dépôt Github</a>\n";
 
 if ($_SERVER['SERVER_NAME']=='localhost') {
   echo "<h2>Dev</h2>\n";

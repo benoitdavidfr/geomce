@@ -1,0 +1,172 @@
+title: schema JSON des mesures compensatoires environnementales exportées de GéoMCE
+$schema: 'http://json-schema.org/schema#'
+$id: https://benoitdavidfr.github.io/geomce/geomce.schema.yaml
+description: version du 16/4/2019
+definitions:
+  Point:
+    title: GeoJSON Point
+    type: object
+    required: [ type, coordinates ]
+    properties:
+      type: { const: Point }
+      coordinates: { type: array, minItems: 2, items: { type: number } }
+      bbox: { type: array, minItems: 4, items: { type: number } }
+  LineString:
+    title: GeoJSON LineString
+    type: object
+    required: [ type, coordinates ]
+    properties:
+      type: { const: LineString }
+      coordinates:
+        type: array
+        minItems: 2
+        items: { type: array, minItems: 2, items: { type: number } }
+      bbox: { type: array, minItems: 4, items: { type: number } }
+  Polygon:
+    title: GeoJSON Polygon
+    type: object
+    required: [ type, coordinates ]
+    properties:
+      type: { const: Polygon }
+      coordinates:
+        type: array
+        items:
+          type: array
+          minItems: 4
+          items: { type: array, minItems: 2, items: { type: number } }
+      bbox: { type: array, minItems: 4, items: { type: number } }
+  MultiPoint:
+    title: GeoJSON MultiPoint
+    type: object
+    required: [ type, coordinates ]
+    properties:
+      type: { const: MultiPoint }
+      coordinates:
+        type: array
+        items: { type: array, minItems: 2, items: { type: number } }
+      bbox: { type: array, minItems: 4, items: { type: number } }
+  MultiLineString:
+    title: GeoJSON MultiLineString
+    type: object
+    required: [ type, coordinates ]
+    properties:
+      type: { const: MultiLineString }
+      coordinates:
+        type: array
+        items:
+          type: array
+          minItems: 2
+          items: { type: array, minItems: 2, items: { type: number } }
+      bbox: { type: array, minItems: 4, items: { type: number } }
+  MultiPolygon:
+    title: GeoJSON MultiPolygon
+    type: object
+    required: [ type, coordinates ]
+    properties:
+      type: { const: MultiPolygon }
+      coordinates:
+        type: array
+        items:
+          type: array
+          items:
+            type: array
+            minItems: 4
+            items: { type: array, minItems: 2, items: { type: number } }
+      bbox: { type: array, minItems: 4, items: { type: number } }
+  GeometryCollection:
+    title: GeoJSON GeometryCollection
+    type: object
+    required: [ type, geometries ]
+    properties:
+      type: { const: GeometryCollection }
+      geometries:
+        type: array
+        items:
+          oneOf:
+            - $ref: '#/definitions/Point'
+            - $ref: '#/definitions/LineString'
+            - $ref: '#/definitions/Polygon'
+            - $ref: '#/definitions/MultiPoint'
+            - $ref: '#/definitions/MultiLineString'
+            - $ref: '#/definitions/MultiPolygon'
+      bbox: { type: array, minItems: 4, items: { type: number } }
+type: object
+required: [type, features]
+properties:
+  type:
+    const: FeatureCollection
+  parameters:
+    description: paramètres de cet export
+    type: object
+    properties:
+      date_export:
+        description: date de l'export de GéoMCE au format YYYY-MM-DD
+        type: string
+        pattern: ^\d{4}-\d{2}-\d{2}$
+  features:
+    description: liste des mesures compensatoires
+    type: array
+    items:
+      decription: chaque mesure compensatoire
+      type: object
+      required: [type, properties, geometry]
+      properties:
+        type:
+          const: Feature
+        properties:
+          type: object
+          required: [mesure_id, projet, categorie, mo, communes, procedure, classe]
+          properties:
+            mesure_id:
+              description: identifiant de la mesure
+              type: integer
+            projet:
+              description: nom du projet nécessitant la mesure
+              type: string
+            categorie:
+              description: catégorie du projet
+              type: string
+            mo:
+              description: nom du maitre d'ouvrage du projet
+              type: string
+            communes:
+              description: liste des communes structurée comme un tableau PostgreSQL avec nom et code INSEE de chaque commune
+              type: string
+            procedure:
+              description: procédure réglementaire pour laquelle la compensation s’applique 
+              type: string
+            date_decision:
+              description: date de la décision exigeant cette mesure au format YYYY-MM-DD
+              type: string
+              pattern: ^\d{4}-\d{2}-\d{2}$
+            classe:
+              description: classe
+              const: Compensation
+            type:
+              description: type de la mesure compensatoire
+              type: string
+            cat:
+              description: catégorie de la mesure compensatoire
+              type: string
+            sscat:
+              description: sous-catégorie de la mesure compensatoire
+              type: string
+            si_metier:
+              description: système(s) d'information contenant le dossier de l'autorisation
+              type: string
+            numero_dossier:
+              description: identifiant(s) du dossier dans le(s) système(s) d'information
+              type: string
+        geometry:
+          description: géometrie GéoJSON
+          oneOf:
+            - type: 'null'
+            - $ref: '#/definitions/Point'
+            - $ref: '#/definitions/LineString'
+            - $ref: '#/definitions/Polygon'
+            - $ref: '#/definitions/MultiPoint'
+            - $ref: '#/definitions/MultiLineString'
+            - $ref: '#/definitions/MultiPolygon'
+            - $ref: '#/definitions/GeometryCollection'
+        bbox: { type: array, minItems: 4, items: { type: number } }
+  bbox: { type: array, minItems: 4, items: { type: number } }
