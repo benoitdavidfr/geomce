@@ -12,6 +12,8 @@ et de réaliser sur ces livraisons:
   - des croisements entre eux afin notamment de détecter des différences
   - des statistiques simples sur chacune
 
+[Proposition de schéma JSON pour la fourniture des données à l'IGN](https://benoitdavidfr.github.io/geomce/geomce.schema.json).
+
 Résultats [disponibles ici](http://gexplor.fr/geomce).
 
 Les exports sont disponibles:
