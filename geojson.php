@@ -1,11 +1,11 @@
 <?php
 /*PhpDoc:
 name: geojson.php
-title: geojson.php - génération GeoJson de la base GeoMCE - Benoit DAVID - 2/3/2019 13:00
+title: geojson.php - génération GeoJSON de la base GeoMCE - Benoit DAVID
 functions:
 classes:
 doc: |
-  Le chemin doit définir la table et écventuellement l'identifiant de la mesure
+  Le chemin doit définir la table et éventuellement l'identifiant de la mesure
   accepte aussi des paramètres GET ou POST bbox et zoom
   En outre cette génération corrige l'erreur de projection de Lambert93 en coord. géo.
   Enfin, deux options complémentaires définies dans le code:
@@ -29,6 +29,8 @@ journal: |
   - utilisation de symboles ponctuels différents en fonction de la table
   4/3/2019:
   - généralisation avec désagrégation
+  2/3/2019
+  - création
 */
 
 require __DIR__.'/geojson.inc.php';
@@ -114,7 +116,7 @@ $marker_symbols = ($georef == 'direct') ? ['circle/0000FF', 'square/3BB9FF'] : [
 // schema de la table
 function ischema(string $table_name): array {
   $query = "select table_schema, table_name, column_name, ordinal_position, data_type, udt_name
-  from INFORMATION_SCHEMA.COLUMNS where table_schema='public' and table_name = 'mce'";
+  from INFORMATION_SCHEMA.COLUMNS where table_schema='public' and table_name = '$table_name'";
   $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 
   $ischema = []; // schema de la table
@@ -135,7 +137,8 @@ function ischema(string $table_name): array {
   return $ischema;
 }
 
-$dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid_geomce password=geomce")
+$connection_string = require __DIR__.'/pgconn.inc.php';
+$dbconn = pg_connect($connection_string)
     or die('Could not connect: ' . pg_last_error());
 
 // schema de la table
@@ -147,7 +150,7 @@ if (!($ischema = ischema($table_name))) {
 $columns = []; // liste des nom de colonnes sauf celle correspondant à la géométrie
 $geomColumn = null; // nom de la colonne correspondant à la géométrie
 foreach ($ischema['byPos'] as $pos => $column) {
-  if ($column['udt_name']<>'geography')
+  if (!in_array($column['udt_name'], ['geography','geometry']))
     $columns[] = $column['column_name'];
   else
     $geomColumn = $column['column_name'];

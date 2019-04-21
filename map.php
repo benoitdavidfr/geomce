@@ -111,6 +111,28 @@ map.addLayer(overlays["mesure"]);
 
 EOT;
 else echo <<<EOT
+  "mesure_emprise" : new L.UGeoJSONLayer({
+    lyrid: 'maps/geomce/mesure_emprise',
+    endpoint: geomceUrl+'/geojson.php/mesure_emprise',
+    onEachFeature: function (feature, layer) {
+      layer.bindPopup(
+        '<b><a href="'+geomceUrl+'/html.php/mesure_emprise/'
+        +feature.properties.num+'" target="_blank">mesure_emprise</a></b><br>'
+        +'<pre>'+JSON.stringify(feature.properties,null,' ')+'</pre>'
+      );
+    },
+    pointToLayer: function(feature, latlng) {
+      return L.marker(latlng, {
+        icon: L.icon({
+          iconUrl: geomceUrl+'/marker.php/'+feature.style["marker-symbol"],
+          iconSize: [20,20], iconAnchor: [10,10], popupAnchor: [0,0]
+        })
+      });
+    },
+    minZoom: 0,
+    maxZoom: 21,
+    usebbox: true
+  }),
 };
 map.addLayer(overlays["mcecpii20190226direct"]);
 

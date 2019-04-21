@@ -1,0 +1,38 @@
+title: suivi de l'utilisation des fichiers
+updated: 2019-02-27
+doc20190227: |
+  Rechargement des 2 tables manuellement comme précédemment.
+  nbre de n-uplets par table:
+    - 253 mesures à la commune
+    - 6290 mesures avec emprise
+    
+  La mise en EPSG:4326 a été effectuée en considérant que toutes les géométries étaient en Lambert 93.
+  Les données de La réunion se retrouvent en Ecosse.
+    
+  stats Cyril:
+    ?column?;total
+    Mesures ayant a minima une emprise;3005
+    Mesures géolocalisées uniquement à la commune;195
+    Mesures dont la durée est renseignée;534
+    Projets ;2204
+    
+doc20190121: |
+  Après différents essais:
+    - j'ai utilisé phpPgAdmin sur Alwaysdata
+    - j'ai exécuté dans une fenêtre SQL "CREATE EXTENSION postgis;"
+    - j'ai modifié le code pour mettre tout dans le schema public
+    - j'ai ouvert une fenêtre SQL et exécuté le code
+      en dissociant la création de la table de l'import des données
+    
+    sur extractign_emprises
+    - le SRID est mal défini, la géométrie est en L93 mais non spécifiée
+    - la superposition avec un fond dans QGis n'est donc pas possible
+    - il faut changer le SRID, voir doc postgis
+    - mais avant supprimer les coord 3D
+    
+    - les géométries sont mélangées (polygones, lignes, points)
+    - à la fin, j'arrive bien à visualiser les données dans QGis
+    
+    sur extractign_commune
+    - les communes sont définies par leur nom et pas leur code
+    - certaines sont à NULL

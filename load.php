@@ -10,6 +10,13 @@ doc: |
   Au final, je choisi d'utiliser le type geography qui permet de calculer des longueurs et des surfaces
   Il existe aussi la possibilité de stocker en projection légale en définissant le SRID correctement
 
+  Ecarts entre les versions CPII et IGNGP:
+    - des erreurs ont été détectées
+    - chgt d'un nom de champ type -> type_mesure
+    - modification des tableaux PostgreSQL
+      - la syntaxe des tableaux a été modifiée
+      - les tableaux sont simplifiés en cas de répétitions
+      - la sémantique si_metier/numero_dossier a été modifiée
 journal: |
   13/4/2019:
   - création
@@ -39,7 +46,8 @@ if (!$_GET || !isset($_GET['action'])) {
 }
 
 if ($_GET['action']=='proj') {
-  $dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid_geomce password=geomce")
+  $connection_string = require __DIR__.'/pgconn.inc.php';
+  $dbconn = pg_connect($connection_string)
       or die('Could not connect: ' . pg_last_error());
   $query = "SELECT * FROM public.spatial_ref_sys";
 
@@ -86,6 +94,47 @@ function ischema(string $table_name): array {
 
   //header('Content-type: text/plain'); echo 'schema='; print_r($ischema); die();
   return $ischema;
+}
+
+// calcule le MD5 à partir du tuple
+function calculateMd5(array $tuple): string {
+  $colnames = [
+    'projet', 'categorie', 'mo', 'communes', 'procedure', 'date_decision', 'classe', 'type', 'cat', 'sscat', 'duree',
+    'si_metier', 'numero_dossier',
+  ];
+  //echo "-- ",json_encode($tuple),"<br>\n";
+  $concat = '';
+  foreach ($colnames as $colname) {
+    $val = isset($tuple[$colname]) ? $tuple[$colname] : '';
+    if (in_array($colname, ['communes','si_metier','numero_dossier']))
+      $val = str_replace('"', '', $val);
+    $concat .= $val . '/';
+  }
+  $md5 = md5($concat);
+  //echo "-- md5=$md5, concat=$concat<br>\n";
+  return $md5;
+}
+
+function simplifySiMetier(array $tuple): array {
+  //echo "si_metier=$tuple[si_metier], numero_dossier=$tuple[numero_dossier]<br>\n";
+  $si_metiers = substr($tuple['si_metier'], 1, strlen($tuple['si_metier'])-2);
+  $si_metiers = explode(',', $si_metiers);
+  $numero_dossiers = substr($tuple['numero_dossier'], 1, strlen($tuple['numero_dossier'])-2);
+  $numero_dossiers = explode(',', $numero_dossiers);
+  $tab = [];
+  $si_metier2 = [];
+  $numero_dossier2 = [];
+  foreach($si_metiers as $i => $si_metier) {
+    $v = $si_metier.':'.$numero_dossiers[$i];
+    if (!in_array($v, $tab)) {
+      $tab[] = $v;
+      $si_metier2[] = $si_metier;
+      $numero_dossier2[] = $numero_dossiers[$i];
+    }
+  }
+  $tuple['si_metier'] = '{'.implode(',', $si_metier2).'}';
+  $tuple['numero_dossier'] = '{'.implode(',', $numero_dossier2).'}';
+  return $tuple;
 }
 
 if (($_GET['action']=='load') && isset($_GET['table'])) {
@@ -136,26 +185,42 @@ if (($_GET['action']=='load') && isset($_GET['table'])) {
   
   $featno = 0;
   while ($tuple = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+    $featno++;
+    //if ($featno <> 2697) continue;
     $geom = $tuple['geometry'] ? Geometry::fromGeoJSON(json_decode($tuple['geometry'], true)) : null;
     //echo "geom="; print_r($geom); echo "\n";
     if ($geom)
       $geom = correctProjectError($geom);
     //echo "geom="; print_r($geom); echo "\n";
-    $tuple['num'] = isset($tuple['mesure_id']) ? $tuple['mesure_id'] : $featno+1;
-    $insert = "insert into public.$dest_table (".implode(', ', $columns).", geom) values(";
+    $tuple['num'] = isset($tuple['mesure_id']) ? $tuple['mesure_id'] : $featno;
+    $tuple = simplifySiMetier($tuple);
+    $insert = "insert into public.$dest_table (".implode(', ', $columns).", md5, geom) values(";
     foreach ($columns as $colname) {
       $val = $tuple[$colname];
       $insert .= ($val ? "'".str_replace("'","''",$val)."'" : 'null').', ';
     }
+    $md5 = calculateMd5($tuple);
+    $insert .= "'$md5', ";
     $insert .= ($geom ? "ST_GeomFromGeoJSON('$geom')" : 'null').');';
+    //echo "$insert\n";
     if (!pg_query($insert)) {
       echo "$insert\n";
       die('line '.__LINE__.', Query failed: ' . pg_last_error());
     }
-    $featno++;
-    //if ($featno >= 100) break;
+    //if ($featno >= 10) break;
   }
   die("-- Fin OK, $featno enregistrements insérés dans $dest_table\n\n\n");
+}
+
+// corrige les erreurs du flux IGNGP
+function convertProperties(array $properties): array {
+  // Utilisation de la syntaxe des tableaux
+  foreach (['communes','si_metier','numero_dossier'] as $colname)
+  $properties[$colname] =
+    $properties[$colname] ? '{"'.str_replace('+', '","', $properties[$colname]).'"}' : '{NULL}';
+  // utilisation du nom utilisé à l'origine
+  $properties['type'] = $properties['type_mesure'];
+  return $properties;
 }
 
 if (($_GET['action']=='load') && isset($_GET['flux'])) {
@@ -212,16 +277,16 @@ if (($_GET['action']=='load') && isset($_GET['flux'])) {
       $contents = json_decode($contents, true);
       //echo "<pre>contents="; print_r($contents); echo "</pre>\n";
       foreach ($contents['features'] as $feature) {
-        $properties = $feature['properties'];
+        $properties = convertProperties($feature['properties']);
         $properties['num'] = $featno+1;
-        // Utilisation de la syntaxe des tableaux
-        $properties['communes'] =
-          $properties['communes'] ? '{"'.str_replace('+', '","', $properties['communes']).'"}' : '{NULL}';
         $insert = "insert into public.$dest_table (".implode(', ', $columns).", geom) values(";
         foreach ($columns as $colname) {
-          $insert .= (isset($properties[$colname]) && $properties[$colname]) ?
-             "'".str_replace("'","''",$properties[$colname])."', " : "null, ";
+          if ($colname == 'md5') continue;
+          $val = isset($properties[$colname]) ? $properties[$colname] : null;
+          $insert .= ($val ? "'".str_replace("'","''",$val)."'" : 'null').', ';
         }
+        $md5 = calculateMd5($properties);
+        $insert .= "'$md5', ";
         $geom = Geometry::fromGeoJSON($feature['geometry']);
         $geom = $geom->reproject(function ($pos) { return WebMercator::geo($pos); });
         $insert .= ($geom ? "ST_GeomFromGeoJSON('$geom')" : 'null').');';
@@ -230,6 +295,7 @@ if (($_GET['action']=='load') && isset($_GET['flux'])) {
           die('Query failed: ' . pg_last_error());
         }
         $featno++;
+        //if ($featno >= 10) break 2;
       }
       if ($contents['totalFeatures'] < $start + $count)
         break;

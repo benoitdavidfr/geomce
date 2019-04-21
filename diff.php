@@ -6,7 +6,8 @@ $deliveries = [
   'mceigngp20190226direct',
 ];
 
-$dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid_geomce password=geomce")
+$connection_string = require __DIR__.'/pgconn.inc.php';
+$dbconn = pg_connect($connection_string)
     or die('Could not connect: ' . pg_last_error());
 
 function display_results(string $query) {
@@ -33,30 +34,30 @@ function display_results(string $query) {
 echo "<h2>Comparaison des 2 livraisons $deliveries[0] (a) et $deliveries[1] (b)</h2>\n";
   
 echo "<h3>projets surfaciques ayant des surfaces différentes</h3>\n";
-$query = "select dela.projet, dela.communes, dela.area_ha a_area_ha, delb.area_ha b_area_ha
+$query = "select dela.projet, dela.area_ha a_area_ha, delb.area_ha b_area_ha
   from dela, delb
-  where dela.projet=delb.projet and dela.communes=delb.communes
+  where dela.projet=delb.projet
     and dela.area_ha + delb.area_ha <> 0 
     and abs((dela.area_ha-delb.area_ha)/(dela.area_ha+delb.area_ha)/2) > 0.01";
 display_results($query);
 
 echo "<h3>projets linéaires ayant des longueurs différentes</h3>\n";
-$query = "select dela.projet, dela.communes, dela.length_km a_length_km, delb.length_km b_length_km
+$query = "select dela.projet, dela.length_km a_length_km, delb.length_km b_length_km
   from dela, delb
-  where dela.projet=delb.projet and dela.communes=delb.communes
+  where dela.projet=delb.projet
     and dela.length_km + delb.length_km <> 0 
     and abs((dela.length_km-delb.length_km)/(dela.length_km+delb.length_km)/2) > 0.01";
 display_results($query);
 
 echo "<h3>mesures de a absentes de b</h3>\n";
-$query = "select dela.projet, dela.communes, dela.area_ha a_area_ha, delb.area_ha b_area_ha, dela.length_km a_length_km, delb.length_km b_length_km
-from dela left join delb on dela.projet=delb.projet and dela.communes=delb.communes
+$query = "select dela.projet, dela.area_ha a_area_ha, delb.area_ha b_area_ha, dela.length_km a_length_km, delb.length_km b_length_km
+from dela left join delb on dela.projet=delb.projet
 where delb.area_ha is null or delb.length_km is null";
 display_results($query);
 
 echo "<h3>mesures de b absentes de a</h3>\n";
-$query = "select delb.projet, delb.communes, delb.area_ha b_area_ha, dela.area_ha a_area_ha, delb.length_km b_length_km, dela.length_km a_length_km
-from delb left join dela on dela.projet=delb.projet and dela.communes=delb.communes
+$query = "select delb.projet, delb.area_ha b_area_ha, dela.area_ha a_area_ha, delb.length_km b_length_km, dela.length_km a_length_km
+from delb left join dela on dela.projet=delb.projet
 where dela.area_ha is null or dela.length_km is null";
 display_results($query);
 

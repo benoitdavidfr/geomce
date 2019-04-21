@@ -83,7 +83,8 @@ function ischema(string $table_name): array {
   return $ischema;
 }
 
-$dbconn = pg_connect("host=postgresql-bdavid.alwaysdata.net dbname=bdavid_geomce user=bdavid_geomce password=geomce")
+$connection_string = require __DIR__.'/pgconn.inc.php';
+$dbconn = pg_connect($connection_string)
     or die('Could not connect: ' . pg_last_error());
 
 // schema de la table
