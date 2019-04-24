@@ -134,7 +134,7 @@ else echo <<<EOT
     usebbox: true
   }),
 };
-map.addLayer(overlays["mcecpii20190226direct"]);
+map.addLayer(overlays["mcecpii20190227direct"]);
 
 EOT;
 ?>

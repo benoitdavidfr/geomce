@@ -20,6 +20,8 @@ doc: |
   Cette propriété est ensuite utilisée dans map.php pour définir le symbole à afficher.
 
 journal: |
+  24/4/2019:
+  - ajout 20190227
   15/4/2019:
   - ajout possibilité de générer un fichier GeoJSON en CLI
   11-12/4/2019:
@@ -42,12 +44,12 @@ function doc(array $params=[]) {
   echo "<h2>Génération GeoJSON de la base MCE</h2>\n";
   if ($params)
     echo "params=",json_encode($params),"<br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226direct'>
-    export CPII 20190226 direct</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226direct/2573'>
-    export CPII 20190226 direct 2573</a><br>\n";
-  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190226commune'>
-    export CPII 20190226 commune</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190227direct'>
+    export CPII 20190227 direct</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190227direct/2573'>
+    export CPII 20190227 direct 2573</a><br>\n";
+  echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190227commune'>
+    export CPII 20190227 commune</a><br>\n";
   echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190411direct'>
     export CPII 20190411 direct</a><br>\n";
   echo "<a href='http://$_SERVER[SERVER_NAME]$_SERVER[SCRIPT_NAME]/mcecpii20190411commune'>

@@ -63,16 +63,16 @@ display_results($query);
 
 
 echo "<h3>Pour mémoire tables à créer dans PostgreSQL</h3><pre>
-  -- création de tables simplifiées et agrégées par projet et communes
+  -- création de tables simplifiées et agrégées par projet
   drop table if exists dela;
   create table dela as
-  select projet, communes, sum(ST_Area(geom))/10000 area_ha, sum(ST_Length(geom))/1000 as length_km
+  select projet, sum(ST_Area(geom))/10000 area_ha, sum(ST_Length(geom))/1000 as length_km
   from $deliveries[0]
-  group by projet, communes;
+  group by projet;
 
   drop table if exists delb;
   create table delb as
-  select projet, communes, sum(ST_Area(geom))/10000 area_ha, sum(ST_Length(geom))/1000 as length_km
+  select projet, sum(ST_Area(geom))/10000 area_ha, sum(ST_Length(geom))/1000 as length_km
   from $deliveries[1]
-  group by projet, communes;
+  group by projet;
   </pre>\n";

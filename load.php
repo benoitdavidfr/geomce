@@ -232,8 +232,9 @@ if (($_GET['action']=='load') && isset($_GET['flux'])) {
     ],
     'commune'=> ['MESURES_COMPENSATOIRES:emprises_commune'],
   ];
-  $urlfmt = 'http://localhost/geoapi/mce/wfs.php?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature'
-  .'&TYPENAMES=%s&STARTINDEX=%d&COUNT=%d&outputFormat=application/json';
+  $urlfmt = ($_SERVER['HTTP_HOST']=='localhost' ? 'http://localhost/geoapi' : 'http://geoapi.fr')
+    .'/mce/wfs.php?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature'
+    .'&TYPENAMES=%s&STARTINDEX=%d&COUNT=%d&outputFormat=application/json';
   
   $dest_table = "mce$_GET[source]$_GET[date]$_GET[georef]";
   $secret_connection_string = require __DIR__.'/secret.inc.php';
