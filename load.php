@@ -30,15 +30,15 @@ if (!$_GET || !isset($_GET['action'])) {
 <a href='?action=load&amp;table=mesures_communes&amp;source=cpii&amp;date=20190411&amp;georef=commune'>
   recopie mesures_communes dans mce cpii 20190411 commune en changeant la projection</a><br>
   
-<a href='?action=load&amp;table=mesure_emprise&amp;source=cpii&amp;date=20190226&amp;georef=direct'>
-  recopie mesure_emprise dans mce cpii 20190226 direct en changeant la projection</a><br>
-<a href='?action=load&amp;table=mesure_commune&amp;source=CPII&amp;date=20190226&amp;georef=commune'>
-  recopie mesure_commune dans mce cpii 20190226 commune en changeant la projection</a><br>
+<a href='?action=load&amp;table=mesure_emprise&amp;source=cpii&amp;date=20190227&amp;georef=direct'>
+  recopie mesure_emprise dans mce cpii 20190227 direct en changeant la projection</a><br>
+<a href='?action=load&amp;table=mesure_commune&amp;source=CPII&amp;date=20190227&amp;georef=commune'>
+  recopie mesure_commune dans mce cpii 20190227 commune en changeant la projection</a><br>
 
-<a href='?action=load&amp;flux=direct&amp;source=igngp&amp;date=20190226&amp;georef=direct'>
-  recopie flux direct dans mce igngp 20190226 direct en changeant la projection</a><br>
-<a href='?action=load&amp;flux=commune&amp;source=igngp&amp;date=20190226&amp;georef=commune'>
-  recopie flux commune dans mce igngp 20190226 commune en changeant la projection</a><br>
+<a href='?action=load&amp;flux=direct&amp;source=igngp&amp;date=20190227&amp;georef=direct'>
+  recopie flux direct dans mce igngp 20190227 direct en changeant la projection</a><br>
+<a href='?action=load&amp;flux=commune&amp;source=igngp&amp;date=20190227&amp;georef=commune'>
+  recopie flux commune dans mce igngp 20190227 commune en changeant la projection</a><br>
 
 <a href='?action=proj'>afficher public.spatial_ref_sys</a><br>
 
