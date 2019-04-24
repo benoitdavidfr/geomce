@@ -1,0 +1,6032 @@
+{ "type": "FeatureCollection",
+"parameters":{"table_name":"mceigngp20190226commune"},
+"features": [
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 1,
+        "projet": "2018 - 83 - Hyeres - Renovation hopital San Salvador ",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Hôpital San Salvador",
+        "communes": "{HYERES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-02-05",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "2 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-01315-041-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.19013918051885,
+            43.1012334647132
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 2,
+        "projet": "Aires Escota A8 _Provence Cristaline_ Canaver_Vidauban",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "ESCOTA",
+        "communes": "{VIDAUBAN}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-02-09",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "30 Année(s)",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.44885486272848,
+            43.401465233307
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 3,
+        "projet": "Aménagement de la mise à 2x3 voies de l’autoroute A52",
+        "categorie": "TRANSPORTS",
+        "mo": "ESCOTA",
+        "communes": "{ROQUEVAIRE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2019-01-28",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "14 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2018-11-13a-01296",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.59788660336958,
+            43.343763242909
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 4,
+        "projet": "Aménagement de la ZAC des Charmilles sur la commune de Gleizé",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Commune de Gleizé",
+        "communes": "{GLEIZE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-03-21",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "15 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-00458-0FT-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            4.68812451063542,
+            45.9911103718802
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 5,
+        "projet": "Aménagement de la ZAC III - Savoie Technolac",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Société Publique Locale de la Savoie (SPLS)",
+        "communes": "{\"VIVIERS DU LAC\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2018-02-16",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "30 Année(s)",
+        "si_metier": "CASCADE+ONAGRE",
+        "numero_dossier": "2017-00045-011-001+73-2016-00132",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.89742561859543,
+            45.650096137013
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 6,
+        "projet": "Aménagement d'un lotissement communal au lieudit \"Autour de Boeucres\" sur la commune d'Hardinghen",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Commune d'Hardinghen",
+        "communes": "{HARDINGHEN}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2011-07-28",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "25 Année(s)",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00142",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.82877218598687,
+            50.7968733961306
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 7,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 8,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 9,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 10,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 11,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 12,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 13,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 14,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 15,
+        "projet": "Aménagement du secteur Oiselets-Sétives de la ZAC de la Maladière,  sur la commune de Bourgoin-Jallieu",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’Agglomération Porte de l’Isère (CAPI)",
+        "communes": "{\"BOURGOIN JALLIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-25",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00058-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.27371622146823,
+            45.6022558814842
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 16,
+        "projet": "Création de la ZAC Lybertec sur les communes de Belleville, Charentay et Saint-Georges-de-Reneins",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SYND MIXTE REALISATION LYON BEAUJOLAIS RHONE TECHNOPARC LYBERTEC ",
+        "communes": "{BELLEVILLE,CHARENTAY,\"ST GEORGES DE RENEINS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-04-23",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "30 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00379-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.68911193378097,
+                46.0837592713524
+            ],
+            [
+                4.72078380500546,
+                46.0581519295441
+            ],
+            [
+                4.73045592035846,
+                46.1021293321616
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 17,
+        "projet": "Déviation de la RD147 relative à la suppression du passage à niveau n°11  à Saint Pierre de Chandieu, Saint Laurent de Mûre, Saint Bonnet de Mûre",
+        "categorie": "TRANSPORTS",
+        "mo": "Département du Rhône",
+        "communes": "{\"ST BONNET DE MURE\",\"ST LAURENT DE MURE\",\"ST PIERRE DE CHANDIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2016-02-22",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "10 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-01144-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                5.00899473876423,
+                45.6449931799759
+            ],
+            [
+                5.02213673417792,
+                45.6962668937604
+            ],
+            [
+                5.06095961228977,
+                45.6837660955892
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 10,
+        "num": 18,
+        "projet": "Ecopôle de Haute-Saintonge - Clérac (17)",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOTRIVAL",
+        "communes": "{BEDENAC,CLERAC,\"LA BARDE\",\"LA CLOTTE\",\"LA GENETOUZE\",\"LE FOUILLOUX\",\"MONTLIEU LA GARDE\",\"ST AIGULIN\",\"ST DIZANT DU GUA\",\"ST PIERRE DU PALAIS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-08-06",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00186-0FT-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                -0.710591020281776,
+                45.4262122978084
+            ],
+            [
+                -0.312360764181299,
+                45.1856293210463
+            ],
+            [
+                -0.271039339580353,
+                45.2333261974521
+            ],
+            [
+                -0.233978422484428,
+                45.1707877642612
+            ],
+            [
+                -0.150974818318478,
+                45.1589122707208
+            ],
+            [
+                -0.143363972175431,
+                45.1151752308495
+            ],
+            [
+                -0.125919486706428,
+                45.2060172694447
+            ],
+            [
+                -0.063489685950909,
+                45.1285809136626
+            ],
+            [
+                -0.05223551237697,
+                45.221340114434
+            ],
+            [
+                -0.044143306910877,
+                45.1672708414781
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 19,
+        "projet": "Extension d'une carrière de pierre de taille de Jardres (86)",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Carrière",
+        "communes": "{JARDRES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2015-06-22",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Abandon de toute gestion : îlot de senescence, autre (à préciser)",
+        "duree": "30 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00508-014-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            0.569325729433713,
+            46.5675123387439
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 20,
+        "projet": "Liaison SCP Gratteloup - Bormes Les Mimosas",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Société du Canal de Provence (SCP)",
+        "communes": "{CALLAS,\"LE CANNET DES MAURES\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-09-06",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "3 Année(s)",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.37503476872606,
+                43.3742647847803
+            ],
+            [
+                6.57352098246704,
+                43.5658793127754
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 21,
+        "projet": "Giratoire Léotard - Fréjus",
+        "categorie": "TRANSPORTS",
+        "mo": "CG83",
+        "communes": "{FREJUS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-06-20",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.76384766255988,
+            43.4718746681887
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 22,
+        "projet": "mise à 2x3 voies de l'autoroute A13  de Dozulé à Pont-l'Evêque.",
+        "categorie": "TRANSPORTS",
+        "mo": "Autre",
+        "communes": "{CRESSEVEUILLE}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2007-07-05",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Autre : à préciser.",
+        "duree": "10 Année(s)",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            0.012002024985015,
+            49.2388927080267
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 10,
+        "num": 23,
+        "projet": "Opération forestière sur les berges du canal de Miribel et du Vieux Rhône dans le Rhône et l'Ain",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "VOIES NAVIGABLES DE FRANCE (VNF)",
+        "communes": "{BEYNOST,\"DECINES CHARPIEU\",JONAGE,JONS,MEYZIEU,MIRIBEL,NIEVROZ,SAINT-MAURICE-DE-BEYNOST,THIL,\"VAULX EN VELIN\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-01-13",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00066-011-001+2017-00066-011-002",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.92615014112475,
+                45.7863696256117
+            ],
+            [
+                4.94107537258718,
+                45.8445076548311
+            ],
+            [
+                4.96115114707002,
+                45.7718203442355
+            ],
+            [
+                4.97759129492633,
+                45.8336328324663
+            ],
+            [
+                4.99763730071451,
+                45.8394166146388
+            ],
+            [
+                5.00628899217957,
+                45.7771500686675
+            ],
+            [
+                5.01778172078103,
+                45.8169190393399
+            ],
+            [
+                5.0412736376445,
+                45.7911428472989
+            ],
+            [
+                5.0591677552333,
+                45.8224436114194
+            ],
+            [
+                5.07859907573051,
+                45.800231548639
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 24,
+        "projet": "Ouvrage de protection du secteur de Fragnès  sur la commune de Crolles",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "COMMUNE DE CROLLES",
+        "communes": "{CROLLES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-10-06",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00062-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.88921942951057,
+            45.2820247583801
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 25,
+        "projet": "Carrière la Catalane",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOMECA",
+        "communes": "{CALLAS,\"LA MOTTE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-02-09",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.55126568838389,
+                43.5078719147557
+            ],
+            [
+                6.57352098246704,
+                43.5658793127754
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 26,
+        "projet": "Parc logistique Boussard Nord",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SCI la Chapelette",
+        "communes": "{\"ST MARTIN DE CRAU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-02-10",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "30 Année(s)",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            4.8565149114673,
+            43.6118771015858
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 27,
+        "projet": "Micro centrale Chute du Fontenil",
+        "categorie": "ÉNERGIE",
+        "mo": "Energie Développement Services du Briançonnais",
+        "communes": "{BRIANCON,VAL-DES-PRES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2009-10-23",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.64885182542483,
+                44.8993595377754
+            ],
+            [
+                6.66717421968953,
+                44.9501686947301
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 28,
+        "projet": "parc photovoltaïque de Lagarde d’Apt (84) - NEOEN - à compléter après 1ere mesure d'évitement",
+        "categorie": "ÉNERGIE",
+        "mo": "NEOEN",
+        "communes": "{\"LAGARDE D APT\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-08-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00718-011-001 ",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.48159180613169,
+            43.9838480417479
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 29,
+        "projet": "parc photovoltaïque de Lagarde d’Apt (84) - NEOEN - à compléter après 1ere mesure d'évitement",
+        "categorie": "ÉNERGIE",
+        "mo": "NEOEN",
+        "communes": "{\"LAGARDE D APT\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-08-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00718-011-001 ",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.48159180613169,
+            43.9838480417479
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 30,
+        "projet": "parc photovoltaïque de Lagarde d’Apt (84) - NEOEN - à compléter après 1ere mesure d'évitement",
+        "categorie": "ÉNERGIE",
+        "mo": "NEOEN",
+        "communes": "{\"LAGARDE D APT\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-08-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00718-011-001 ",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.48159180613169,
+            43.9838480417479
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 31,
+        "projet": "parc photovoltaïque de Lagarde d’Apt (84) - NEOEN - à compléter après 1ere mesure d'évitement",
+        "categorie": "ÉNERGIE",
+        "mo": "NEOEN",
+        "communes": "{\"LAGARDE D APT\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-08-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00718-011-001 ",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.48159180613169,
+            43.9838480417479
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 79,
+        "projet": "Canalisation et Usine d'eau potable au Muy",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Syndicat de l'Eau du Var Est",
+        "communes": "{\"LE MUY\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-10-29",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.57711403890504,
+            43.4688702341827
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 32,
+        "projet": "Programme d'aménagement G2S et 1ère ligne Golden Mile de l’Aéroport de Lyon-Saint-Exupéry sur la commune de Colombier-Saugnieu",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "AEROPORTS DE LYON",
+        "communes": "{\"COLOMBIER SAUGNIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-12-14",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "30 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00917-011-003+2015-00917-011-005",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.10354225723433,
+            45.7179809122109
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 33,
+        "projet": "Programme d'aménagement G2S et 1ère ligne Golden Mile de l’Aéroport de Lyon-Saint-Exupéry sur la commune de Colombier-Saugnieu",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "AEROPORTS DE LYON",
+        "communes": "{\"COLOMBIER SAUGNIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-12-14",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "30 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00917-011-003+2015-00917-011-005",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.10354225723433,
+            45.7179809122109
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 34,
+        "projet": "Réalisation de la ligne électrique souterraine Savoie-Piémont par la société Réseau de Transport d’Electricité",
+        "categorie": "ÉNERGIE",
+        "mo": "RESEAU DE TRANSPORT D'ELECTRICITE (RTE)",
+        "communes": "{CHAMOUSSET,\"ST ETIENNE DE CUINES\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2016-12-28",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-00545-011-002+2016-00545-0FT-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.2069641994356,
+                45.5649278642349
+            ],
+            [
+                6.26034368515886,
+                45.3453996838279
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 35,
+        "projet": "Réalisation de travaux de sécurisation des zones de travail et d’amélioration de la voie d’accès secours piétons en pied du barrage de Tignes",
+        "categorie": "ÉNERGIE",
+        "mo": "ELECTRICITE DE FRANCE (E.D.F.)",
+        "communes": "{TIGNES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2016-12-20",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "5 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-00578-041-002+2016-00578-041-003+2016-00578-0FT-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.93581468439418,
+            45.4815244194821
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 36,
+        "projet": "Renouvellement d’exploitation et extension d’une carrière sur la commune de DROM",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "GUINET DERRIAZ CARRIERES",
+        "communes": "{DROM}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-12-18",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Abandon de toute gestion : îlot de senescence, autre (à préciser)",
+        "duree": "50 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-01234-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.36830102463431,
+            46.2199236564978
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 37,
+        "projet": "Renouvellement d’exploitation et extension d’une carrière sur la commune de DROM",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "GUINET DERRIAZ CARRIERES",
+        "communes": "{DROM}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-12-18",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "30 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-01234-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.36830102463431,
+            46.2199236564978
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 38,
+        "projet": "Renouvellement et extension de la carrière des Badaffres, située sur les communes de Roussas et des Granges-Gontardes",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "GRANULATS DE LA DROME",
+        "communes": "{\"LES GRANGES GONTARDES\",ROUSSAS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-04-23",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "20 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00060-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.75700534647862,
+                44.4279656306828
+            ],
+            [
+                4.78739345064272,
+                44.4424676195455
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 39,
+        "projet": "Renouvellement et extension d’une carrière au lieu-dit Les Cramades sur les communes de Saint-Flour et d'Andelat.",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "ENTREPRISE MARQUET",
+        "communes": "{ANDELAT,\"ST FLOUR\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "30 Année(s)",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00589-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                3.05946875118036,
+                45.0698676007533
+            ],
+            [
+                3.08305365997172,
+                45.0286952033264
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 40,
+        "projet": "Carrière la Catalane",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOMECA",
+        "communes": "{CALLAS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-02-09",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.57352098246704,
+            43.5658793127754
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 41,
+        "projet": "Agrandissement du plan d'eau en zone humide sur la commune de Merlimont",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Robert Dufour",
+        "communes": "{MERLIMONT}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2012-03-02",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2009-00297",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.60758397077462,
+            50.4527869411557
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 42,
+        "projet": "Agrandissement du plan d'eau en zone humide sur la commune de Merlimont",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Robert Dufour",
+        "communes": "{MERLIMONT}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2012-03-02",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Reprofilage / Restauration de berges (yc suppression des protections artificielles)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2009-00297",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.60758397077462,
+            50.4527869411557
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 43,
+        "projet": "Aménagement de l’accès Ouest de Saint-Julien-en-Genevois",
+        "categorie": "TRANSPORTS",
+        "mo": "Saint-Julien-en-Genevois",
+        "communes": "{\"ST JULIEN EN GENEVOIS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2015-10-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00691-012-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.07790351965752,
+            46.1393482783313
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 44,
+        "projet": "Aménagement de la retenue d'altitude de la Masse",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SEVABEL",
+        "communes": "{\"LES BELLEVILLE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-18",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00342-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.51667990702042,
+            45.3343821970174
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 45,
+        "projet": "Aménagement de la retenue d'altitude de la Masse",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SEVABEL",
+        "communes": "{\"LES BELLEVILLE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-05-18",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00342-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.51667990702042,
+            45.3343821970174
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 46,
+        "projet": "Aménagement de la ZAC \"Le Sauvage\" par la communauté de commune d'Albens",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté de communes du canton d'Albens (CCCA)",
+        "communes": "{MOGNARD}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2007-10-16",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Autre : à préciser",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00925-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.95247779650676,
+            45.7522853662632
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 47,
+        "projet": "Aménagement de la ZAE des Etaies",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de communes de Chautagne",
+        "communes": "{CHINDRIEUX}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2012-12-14",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "73-2012-00152",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.84488582125715,
+            45.8127954555703
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 80,
+        "projet": "Carrière Bec de l'Esteron - Gilette",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Syndicat des exploitants des Ballastières du lit du Var",
+        "communes": "{GILETTE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2004-01-21",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.16126721835894,
+            43.8483639013911
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 48,
+        "projet": "Aménagement de la zone d'expansion de crue des Bonniers sur la commune de Gonnehem",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de communes Artois-Lys",
+        "communes": "{GONNEHEM}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-09-17",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00017",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.56727516799564,
+            50.5647106548792
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 49,
+        "projet": "Aménagement de la zone d'expansion de crue des Bonniers sur la commune de Gonnehem",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de communes Artois-Lys",
+        "communes": "{GONNEHEM}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-09-17",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00017",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.56727516799564,
+            50.5647106548792
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 50,
+        "projet": "Aménagement de la zone d'expansion de crue des Bonniers sur la commune de Gonnehem",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de communes Artois-Lys",
+        "communes": "{GONNEHEM}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-09-17",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00017",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.56727516799564,
+            50.5647106548792
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 51,
+        "projet": "Aménagement de la zone d'expansion de crue des Bonniers sur la commune de Gonnehem",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de communes Artois-Lys",
+        "communes": "{GONNEHEM}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-09-17",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Reprofilage / Restauration de berges (yc suppression des protections artificielles)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00017",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.56727516799564,
+            50.5647106548792
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 52,
+        "projet": "Aménagement de la zone du parc d'activités de la Rivière Neuve sur la commune de Calais",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Commune de Calais",
+        "communes": "{CALAIS}",
+        "procedure": "Autorisation unique IOTA - expérimentation",
+        "date_decision": "2015-11-13",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2012-00070",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.87616803084766,
+            50.9504144583625
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 53,
+        "projet": "Aménagement de la zone du parc d'activités de la Rivière Neuve sur la commune de Calais",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Commune de Calais",
+        "communes": "{CALAIS}",
+        "procedure": "Autorisation unique IOTA - expérimentation",
+        "date_decision": "2015-11-13",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2012-00070",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.87616803084766,
+            50.9504144583625
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 54,
+        "projet": "Aménagement de logements et d'une maison de santé pluriprofessionnelle sur la commune d'Auxi-le-Château",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Pas-de-Calais Habitat",
+        "communes": "{\"AUXI LE CHATEAU\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2017-02-20",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2016-00218",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.11681630415946,
+            50.2310151146935
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 55,
+        "projet": "Aménagement de lots dans la zone industrielle du Gournier sur les communes de Châteauneuf-du-Rhône et de Montélimar",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Société FD Immobilier - Filiale Groupe Charles André",
+        "communes": "{\"CHATEAUNEUF DU RHONE\",MONTELIMAR}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2015-11-17",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00468-014-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.72474886937464,
+                44.5033753682789
+            ],
+            [
+                4.7482038773006,
+                44.5538563394787
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 56,
+        "projet": "Aménagement du domaine des Dryades sur  la commune de Marck",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "MAVAN Aménageur ",
+        "communes": "{MARCK}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2012-05-23",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Abandon de toute gestion : îlot de senescence, autre (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2008-00382",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.95009337112686,
+            50.9533525968169
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 57,
+        "projet": "Aménagement du domaine des Dryades sur  la commune de Marck",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "MAVAN Aménageur ",
+        "communes": "{MARCK}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2012-05-23",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration de ripisylves existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2008-00382",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.95009337112686,
+            50.9533525968169
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 58,
+        "projet": "Aménagement d'une piste cyclable d'Aire-sur-la-Lys à Saint-Venant",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Conseil Départemental du Pas-de-Calais",
+        "communes": "{\"AIRE SUR LA LYS\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2016-11-10",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Autre : à préciser.",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2016-00175",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.39589171897807,
+            50.6442075139675
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 59,
+        "projet": "Aménagement d'une piste cyclable d'Aire-sur-la-Lys à Saint-Venant",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Conseil Départemental du Pas-de-Calais",
+        "communes": "{\"AIRE SUR LA LYS\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2016-11-10",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2016-00175",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.39589171897807,
+            50.6442075139675
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 60,
+        "projet": "Aménagement d'une plaine des sports/loisirs  sur la commune de Lumbres",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de Communes du Pays de Lumbres",
+        "communes": "{LUMBRES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2016-03-02",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2015-00180",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.11667505417001,
+            50.7046846771355
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 61,
+        "projet": "Aménagement d'une plaine des sports/loisirs  sur la commune de Lumbres",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de Communes du Pays de Lumbres",
+        "communes": "{LUMBRES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2016-03-02",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2015-00180",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.11667505417001,
+            50.7046846771355
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 62,
+        "projet": "Aménagement d'un lotissement en zone humide rue du Beau Marais sur la commune de Calais",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Francelot SAS",
+        "communes": "{BREMES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2015-03-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00203",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.95564723449862,
+            50.8478593438454
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 63,
+        "projet": "Aménagement  d'un lotissement en zone humide sur la commune de Andres",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Indivision Parissaux",
+        "communes": "{ANDRES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2012-07-23",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00405",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.91840284640463,
+            50.8661286257787
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 64,
+        "projet": "Aménagement  d'un lotissement en zone humide sur la commune de Andres",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Indivision Parissaux",
+        "communes": "{ANDRES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2012-07-23",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00405",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.91840284640463,
+            50.8661286257787
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 65,
+        "projet": "Aménagement d'un lotissement en zone humide sur la commune de Coquelles",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SA Habitat 59/62/Picardie ",
+        "communes": "{BREMES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-08-07",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.95564723449862,
+            50.8478593438454
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 66,
+        "projet": "Aménagement d'un lotissement Rue des provins en zone humide sur la commune de Oye Plage",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "La Maison Flamande",
+        "communes": "{\"OYE PLAGE\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2017-05-12",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2016-00183",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.039938299541,
+            50.9819899674247
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 67,
+        "projet": "Aménagement d'un parking relais sur la commune de Cranves-Sales",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d’agglomération Annemasse-Les Voirons Agglomération",
+        "communes": "{\"CRANVES SALES\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2016-01-22",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00839-0FT-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.3038332376455,
+            46.1973792117435
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 68,
+        "projet": "Aménagement du port fluvial de Béthune",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Chambre de Commerce et d'Industrie d'Artois",
+        "communes": "{BETHUNE,BEUVRY}",
+        "procedure": "Autorisation unique IOTA - expérimentation",
+        "date_decision": "2016-10-19",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00209",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.64287021340487,
+                50.5292214406238
+            ],
+            [
+                2.69143248681545,
+                50.532765616844
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 69,
+        "projet": "Aménagement du port fluvial de Béthune",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Chambre de Commerce et d'Industrie d'Artois",
+        "communes": "{BEUVRY}",
+        "procedure": "Autorisation unique IOTA - expérimentation",
+        "date_decision": "2016-10-19",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des zones de frayes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00209",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.69143248681545,
+            50.532765616844
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 70,
+        "projet": "Aménagement et extension d'un centre commercial Leclerc en zone humide sur la commune d'Attin",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SAS Attindis",
+        "communes": "{MONTREUIL}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-10-20",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00146",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.7712263968388,
+            50.4653883546027
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 71,
+        "projet": "Aménagement routier de la déviation de Gimont (RN 124)",
+        "categorie": "TRANSPORTS",
+        "mo": "DREAL Midi-Pyrénées STID",
+        "communes": "{GIMONT}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-08-08",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-05-13a-00498 ",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            0.880316797043518,
+            43.6207617449662
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 72,
+        "projet": "Aménagement routier de la déviation de Gimont (RN 124)",
+        "categorie": "TRANSPORTS",
+        "mo": "DREAL Midi-Pyrénées STID",
+        "communes": "{GIMONT}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-08-08",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-05-13a-00498 ",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            0.880316797043518,
+            43.6207617449662
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 73,
+        "projet": "Aménagements de la ZAC de la Turquerie sur les communes de Calais et de Marck",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté d'Agglomération du Calaisis - Cap Calaisis",
+        "communes": "{CALAIS,MARCK}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2013-11-28",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Reprofilage / Restauration de berges (yc suppression des protections artificielles)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00406",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                1.87616803084766,
+                50.9504144583625
+            ],
+            [
+                1.95009337112686,
+                50.9533525968169
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 74,
+        "projet": "Busage d'un cours d'eau, remblai d'une zone humide et création de plans d'eau sur la commune de Wimille",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "EARL du Cèdre Bleu",
+        "communes": "{WIMILLE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-05-18",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00139",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.64183020402698,
+            50.7647641353033
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 75,
+        "projet": "Busage d'un cours d'eau, remblai d'une zone humide et création de plans d'eau sur la commune de Wimille",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "EARL du Cèdre Bleu",
+        "communes": "{WIMILLE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-05-18",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Changement des pratiques culturales par conversion de terres cultivées ou exploitées de manière intensive",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00139",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.64183020402698,
+            50.7647641353033
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 76,
+        "projet": "Busage d'un cours d'eau, remblai d'une zone humide et création de plans d'eau sur la commune de Wimille",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "EARL du Cèdre Bleu",
+        "communes": "{WIMILLE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-05-18",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Arasement ou dérasement d’un obstacle transversal, d’un seuil, d’un busage (cours d’eau)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00139",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.64183020402698,
+            50.7647641353033
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 77,
+        "projet": "Busage d'un cours d'eau, remblai d'une zone humide et création de plans d'eau sur la commune de Wimille",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "EARL du Cèdre Bleu",
+        "communes": "{WIMILLE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-05-18",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des conditions hydromorphologique du lit mineur (hors emprise)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00139",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.64183020402698,
+            50.7647641353033
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 78,
+        "projet": "Busage d'un cours d'eau, remblai d'une zone humide et création de plans d'eau sur la commune de Wimille",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "EARL du Cèdre Bleu",
+        "communes": "{WIMILLE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-05-18",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00139",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.64183020402698,
+            50.7647641353033
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 81,
+        "projet": "Carrière des Marmoneries - Prasville et Viabon",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SMBP",
+        "communes": "{PRASVILLE}",
+        "procedure": "ICPE - Autorisation",
+        "date_decision": "2016-02-24",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.71180272822182,
+            48.2739367927618
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 82,
+        "projet": "Carrière La Brosse",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Société EQIOM",
+        "communes": "{\"SULLY SUR LOIRE\"}",
+        "procedure": "ICPE - Autorisation",
+        "date_decision": "2017-12-18",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "S3IC",
+        "numero_dossier": "0100.03759",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.35694620229698,
+            47.7520379684982
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 83,
+        "projet": "Carrière la Catalane",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOMECA",
+        "communes": "{CALLAS,\"LA MOTTE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-02-09",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.55126568838389,
+                43.5078719147557
+            ],
+            [
+                6.57352098246704,
+                43.5658793127754
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 84,
+        "projet": "Carrière La Joyeuse - Callas",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "LAFARGE GRANULATs SUD",
+        "communes": "{CALLAS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.57352098246704,
+            43.5658793127754
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 85,
+        "projet": "Carrière La Joyeuse - Callas",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "LAFARGE GRANULATs SUD",
+        "communes": "{CALLAS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.57352098246704,
+            43.5658793127754
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 86,
+        "projet": "Carrière La Joyeuse - Callas",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "LAFARGE GRANULATs SUD",
+        "communes": "{CALLAS,CLAVIERS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.57352098246704,
+                43.5658793127754
+            ],
+            [
+                6.58582739547591,
+                43.5989741560291
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 87,
+        "projet": "carrière les bois de Villeneuve à Mézières -lez-clery",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "LSM Les sables de mézières",
+        "communes": "{\"MEZIERES LEZ CLERY\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2008-11-06",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.81716676656001,
+            47.8108406129948
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 88,
+        "projet": "Centrale de cogénération à partir de biomasse - Commentry",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "BIOMASSE ENERGIE DE COMMENTRY",
+        "communes": "{COMMENTRY}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-09-26",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-01015-011-001+2017-01015-011-002",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.74943546262533,
+            46.2789694283627
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 89,
+        "projet": "Centre de valorisation organique(CVO) - Le Broc",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Syndicat mixte d’élimination des déchets (SMED)",
+        "communes": "{BROC}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-08-02",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.15919666753934,
+            43.8152158491818
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 90,
+        "projet": "Complexe thalasso - Martigues",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Compagnie financiere St Thomas pour le groupe Accord ",
+        "communes": "{MARTIGUES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-10-04",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.049740015434,
+            43.3809513648155
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 4,
+        "num": 91,
+        "projet": "Confortement falaises Riviera",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SIVoM de Villefranche-sur-mer",
+        "communes": "{CAP-D'AIL,EZE,TURBIE,VILLEFRANCHE-SUR-MER}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-11-07",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                7.32198589038893,
+                43.712213839382
+            ],
+            [
+                7.36039417884302,
+                43.7291564700661
+            ],
+            [
+                7.39778946240087,
+                43.7456338931038
+            ],
+            [
+                7.40151161595859,
+                43.7254162852997
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 4,
+        "num": 92,
+        "projet": "Confortement falaises Riviera",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SIVoM de Villefranche-sur-mer",
+        "communes": "{CAP-D'AIL,EZE,TURBIE,VILLEFRANCHE-SUR-MER}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-11-07",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                7.32198589038893,
+                43.712213839382
+            ],
+            [
+                7.36039417884302,
+                43.7291564700661
+            ],
+            [
+                7.39778946240087,
+                43.7456338931038
+            ],
+            [
+                7.40151161595859,
+                43.7254162852997
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 93,
+        "projet": "Contournement Sud d'Aire-sur-la-Lys entre la RD943 et la RD188 sur la commune d'Aire-sur-la-Lys",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Conseil Départemental du Pas-de-Calais",
+        "communes": "{\"AIRE SUR LA LYS\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2013-10-25",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00256",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.39589171897807,
+            50.6442075139675
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 5,
+        "num": 94,
+        "projet": "Création de la base logistique SOCARA, localisé sur la commune de Villette d’Anthon",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOCIETE COOPERATIVE D'APPROVISIONNEMENT RHONE ALPES (SOCORA)",
+        "communes": "{JANNEYRIAS,JONAGE,JONS,PUSIGNAN,\"VILLETTE D ANTHON\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-12-10",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00362-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                5.0412736376445,
+                45.7911428472989
+            ],
+            [
+                5.06742658288359,
+                45.7538844050638
+            ],
+            [
+                5.07859907573051,
+                45.800231548639
+            ],
+            [
+                5.10748075315841,
+                45.7845823185702
+            ],
+            [
+                5.11447824618034,
+                45.7516550878364
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 95,
+        "projet": "Création de la base logistique SOCARA, localisé sur la commune de Villette d’Anthon",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOCIETE COOPERATIVE D'APPROVISIONNEMENT RHONE ALPES (SOCORA)",
+        "communes": "{\"VILLETTE D ANTHON\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-12-10",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00362-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.10748075315841,
+            45.7845823185702
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 96,
+        "projet": "Création de la centrale hydroélectrique du barrage de Motz",
+        "categorie": "ÉNERGIE",
+        "mo": "COMPAGNIE NATIONALE DU RHONE",
+        "communes": "{MOTZ}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2008-09-08",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration de ripisylves existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00939-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.84491536145623,
+            45.919063453883
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 97,
+        "projet": "Création d'une bretelle de sortie sur l'autoroute A41 à Bernin",
+        "categorie": "TRANSPORTS",
+        "mo": "Société des autoroutes Rhône Alpes et communauté de communes du moyen Grésivaudan",
+        "communes": "{BERNIN}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2005-09-02",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.86409173906493,
+            45.2650730799958
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 98,
+        "projet": "Création d'une piste de ski (retour Preyerand)",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SEVABEL",
+        "communes": "{\"LES BELLEVILLE\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2012-10-23",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "73-2011-00276",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.51667990702042,
+            45.3343821970174
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 99,
+        "projet": "Création d'une piste de ski (retour Preyerand)",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SEVABEL",
+        "communes": "{\"LES BELLEVILLE\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2012-10-23",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "73-2011-00276",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.51667990702042,
+            45.3343821970174
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 100,
+        "projet": "Réalimentation n alluviale du Gapeau - Hyères",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Lyonnaise Des Eaux pour la ville de Hyères",
+        "communes": "{HYERES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-02-04",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.19013918051885,
+            43.1012334647132
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 101,
+        "projet": "Curage d'un plan d'eau et dépôt des boues en zone hulide sur la commune de Guines",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "André Rault",
+        "communes": "{GUINES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-07-29",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00010",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.87030402222214,
+            50.8582338443606
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 102,
+        "projet": "Curage d'un plan d'eau et dépôt des boues en zone hulide sur la commune de Guines",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "André Rault",
+        "communes": "{GUINES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-07-29",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00010",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.87030402222214,
+            50.8582338443606
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 103,
+        "projet": "Curage d'un plan d'eau sur la commune de Oye Plage",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "René Lavoye",
+        "communes": "{\"OYE PLAGE\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-10-26",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Reprofilage / Restauration de berges (yc suppression des protections artificielles)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00149",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.039938299541,
+            50.9819899674247
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 104,
+        "projet": "Curage d'un plan d'eau sur la commune de Oye Plage",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "René Lavoye",
+        "communes": "{\"OYE PLAGE\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-10-26",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration de ripisylves existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00149",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.039938299541,
+            50.9819899674247
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 105,
+        "projet": "ISDND - Massoins",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SMED",
+        "communes": "{MASSOINS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-09",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.12450937267342,
+            43.9485303987422
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 106,
+        "projet": "Déviation de Nort-sur-Erdre - RD 16 et RD 164",
+        "categorie": "TRANSPORTS",
+        "mo": "Conseil Départemental",
+        "communes": "{\"NORT SUR ERDRE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-12-24",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Autre : à préciser.",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00118-014-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -1.51861773621457,
+            47.4476614234789
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 107,
+        "projet": "Déviation de Nort-sur-Erdre - RD 16 et RD 164",
+        "categorie": "TRANSPORTS",
+        "mo": "Conseil Départemental",
+        "communes": "{\"NORT SUR ERDRE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-12-24",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00118-014-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -1.51861773621457,
+            47.4476614234789
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 108,
+        "projet": "DFCi et liaison électrique La Garde-Hyères",
+        "categorie": "ÉNERGIE",
+        "mo": "RTE",
+        "communes": "{HYERES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-12-08",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.19013918051885,
+            43.1012334647132
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 109,
+        "projet": "EARL de Lavaux - drainage",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "EARL de Lavaud",
+        "communes": "{\"JEU LES BOIS\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2017-05-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Autre : à préciser.",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "36-2017-00069",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.79464889459377,
+            46.6818479362412
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 110,
+        "projet": "Éoliennes les Pallières",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SAEML Eoliennes des Pallières",
+        "communes": "{ESPARRON,\"SEILLONS SOURCE D ARGENS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                5.84862515646587,
+                43.5876811741101
+            ],
+            [
+                5.87679970876726,
+                43.5150902670728
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 111,
+        "projet": "Éoliennes les Pallières",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SAEML Eoliennes des Pallières",
+        "communes": "{RIANS,ROUSSET,VAUVENARGUES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                5.61275520291109,
+                43.5587524175926
+            ],
+            [
+                5.62396171152446,
+                43.4838985067701
+            ],
+            [
+                5.74033489580418,
+                43.6051799560858
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 112,
+        "projet": "Etablissement pénitentiaire - Draguignan",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "agence publique pour l'immobilier de la justice",
+        "communes": "{DRAGUIGNAN}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-11-06",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.4545900454044,
+            43.5360740828551
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 113,
+        "projet": "Exploitation d'une carrière et installation de traitement Usine de Montalieu sur la commune de Creys-Mépieu",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "GRANULAT VICAT",
+        "communes": "{\"CREYS MEPIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-06-08",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00838-011-001+2017-00838-011-002",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.46558138610722,
+            45.7443147395407
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 114,
+        "projet": "Exploitation d'une carrière et installation de traitement Usine de Montalieu sur la commune de Creys-Mépieu",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "GRANULAT VICAT",
+        "communes": "{\"CREYS MEPIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-06-08",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00838-011-001+2017-00838-011-002",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.46558138610722,
+            45.7443147395407
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 115,
+        "projet": "Exploitation d'une carrière et installation de traitement Usine de Montalieu sur la commune de Creys-Mépieu",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "GRANULAT VICAT",
+        "communes": "{\"CREYS MEPIEU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-06-08",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Modification ou équipement d’ouvrage existant (hors emprise du projet)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00838-011-001+2017-00838-011-002",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.46558138610722,
+            45.7443147395407
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 116,
+        "projet": "Extension de la plateforme multimodale de Dourges",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Syndicat Mixte pour la réalisation de la plateforme multimodale d'intérêt Européen de Dourges",
+        "communes": "{DOURGES,OSTRICOURT}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2014-07-01",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Reprofilage / Restauration de berges (yc suppression des protections artificielles)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00102",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.98619880561712,
+                50.4395233561894
+            ],
+            [
+                3.0332678453224,
+                50.4571334296832
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 117,
+        "projet": "Réalimentation n alluviale du Gapeau - Hyères",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Lyonnaise Des Eaux pour la ville de Hyères",
+        "communes": "{HYERES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2014-02-04",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.19013918051885,
+            43.1012334647132
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 118,
+        "projet": "Extension du parc d'activités Savoie Hexapole - Tranche 4",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "syndicat mixte Savoie Hexapole",
+        "communes": "{MERY,SONNAZ}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-07-07",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "73-2011-00091",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                5.91743293737859,
+                45.6193289747177
+            ],
+            [
+                5.93444709292766,
+                45.6369602696774
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 141,
+        "projet": "Plateforme IKEA - Fos",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "IKEA ",
+        "communes": "{\"FOS SUR MER\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2007-11-20",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Autre : à préciser.",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            4.90437587151943,
+            43.45586128861
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 119,
+        "projet": "Extension du terminal fret Eurotunnel sur les communes de Coquelles et Calais",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Eurotunnel",
+        "communes": "{CALAIS,COQUELLES}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2014-04-10",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00131",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                1.81565956940043,
+                50.9293965282044
+            ],
+            [
+                1.87616803084766,
+                50.9504144583625
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 120,
+        "projet": "Extension du terminal fret Eurotunnel sur les communes de Coquelles et Calais",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Eurotunnel",
+        "communes": "{CALAIS,COQUELLES}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2014-04-10",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Restauration de corridor écologique",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00131",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                1.81565956940043,
+                50.9293965282044
+            ],
+            [
+                1.87616803084766,
+                50.9504144583625
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 121,
+        "projet": "Giratoire Léotard - Fréjus",
+        "categorie": "TRANSPORTS",
+        "mo": "CG83",
+        "communes": "{FREJUS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-06-20",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.76384766255988,
+            43.4718746681887
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 122,
+        "projet": "ISDND du Balançan",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOVATRAM/ Pizzorno",
+        "communes": "{\"LE CANNET DES MAURES\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2008-03-21",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.37503476872606,
+            43.3742647847803
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 123,
+        "projet": "ISDND du Balançan",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SOVATRAM/ Pizzorno",
+        "communes": "{\"LE CANNET DES MAURES\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2008-03-21",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.37503476872606,
+            43.3742647847803
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 124,
+        "projet": "ITER",
+        "categorie": "ÉNERGIE",
+        "mo": "Agence iter France",
+        "communes": "{\"ST PAUL LES DURANCE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-09-27",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.75313612561106,
+            43.6858424188439
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 125,
+        "projet": "Liaison SCP Sainte Maxime",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Société du Canal de Provence",
+        "communes": "{\"LE PLAN DE LA TOUR\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-30",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.54800540334321,
+            43.338540274394
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 126,
+        "projet": "Lotissement des Combes-Jauffret - Ramatuelle",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Commune de Ramatuelle",
+        "communes": "{RAMATUELLE,\"ST TROPEZ\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-06-23",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.6374964584438,
+                43.2186690538228
+            ],
+            [
+                6.66444523914987,
+                43.262409895882
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 127,
+        "projet": "Lotissement Malouesse - Luynes",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "SEMEPA",
+        "communes": "{\"AIX EN PROVENCE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-06-22",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.39873832045182,
+            43.5360161916901
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 128,
+        "projet": "Lotissement Rue du Marais et Rue de la Morande sur la commune de Quiestede",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Commune de Quiestede",
+        "communes": "{QUIESTEDE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-08-01",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00040",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.32968657519911,
+            50.6802192807644
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 129,
+        "projet": "Lotissement Rue du Marais et Rue de la Morande sur la commune de Quiestede",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Commune de Quiestede",
+        "communes": "{QUIESTEDE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-08-01",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00040",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.32968657519911,
+            50.6802192807644
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 130,
+        "projet": "Micro centrale Chute du Fontenil",
+        "categorie": "ÉNERGIE",
+        "mo": "Energie Développement Services du Briançonnais",
+        "communes": "{BRIANCON,VAL-DES-PRES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2009-10-23",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.64885182542483,
+                44.8993595377754
+            ],
+            [
+                6.66717421968953,
+                44.9501686947301
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 131,
+        "projet": "mise à 2x3 voies de l'autoroute A13  de Dozulé à Pont-l'Evêque.",
+        "categorie": "TRANSPORTS",
+        "mo": "Autre",
+        "communes": "{CRESSEVEUILLE,\"PONT L EVEQUE\",\"ST HYMER\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2007-07-05",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                0.012002024985015,
+                49.2388927080267
+            ],
+            [
+                0.167139548919894,
+                49.2435707034085
+            ],
+            [
+                0.187974548719139,
+                49.2802157047419
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 132,
+        "projet": "Mise en sécurité remblais Epsilon II - CAFSR",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Communauté d'Agglomération Fréjus -Saint Raphaël (CAFSR)",
+        "communes": "{FREJUS}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-06-20",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.76384766255988,
+            43.4718746681887
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 133,
+        "projet": "Mise en service d'une installation de stockage de déchets inertes - Pouancay (86)",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Carrières de la MOTTE-BOURBON",
+        "communes": "{POUANCAY}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2015-08-03",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Changement des pratiques culturales par conversion de terres cultivées ou exploitées de manière intensive",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00347-014-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -0.079919723611937,
+            47.0877956033237
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 134,
+        "projet": "Mise en service d'une installation de stockage de déchets inertes - Pouancay (86)",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Carrières de la MOTTE-BOURBON",
+        "communes": "{POUANCAY}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2015-08-03",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-00347-014-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -0.079919723611937,
+            47.0877956033237
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 135,
+        "projet": "Mise sécurité de la falaise de Saint Eucher - Beaumont",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Conseil Général de Vaucluse (CG 84)",
+        "communes": "{\"BEAUMONT DE PERTUIS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-12-27",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.69575671353369,
+            43.7378601806058
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 136,
+        "projet": "OPH 36 - Nids d'hirondelles - Villedieu",
+        "categorie": "NON PRECISE",
+        "mo": "OPH 36",
+        "communes": "{\"VILLEDIEU SUR INDRE\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-07-19",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une autre mesure C2 Se distingue de la mesure R2-2t « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "36-2018-07-19-003",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.5155034196842,
+            46.844846079399
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 137,
+        "projet": "Parc logistique Boussard Sud",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "société  SCI Boussard Sud",
+        "communes": "{\"ST MARTIN DE CRAU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-07-23",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            4.8565149114673,
+            43.6118771015858
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 138,
+        "projet": "Photovoltaïque Catalany - Valensole",
+        "categorie": "ÉNERGIE",
+        "mo": "SAS Centrale Photovoltaïque de Valensole ",
+        "communes": "{VALENSOLE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-10-14",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.94204646205136,
+            43.8383362492608
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 139,
+        "projet": "Photovoltaïque Catalany - Valensole",
+        "categorie": "ÉNERGIE",
+        "mo": "SAS Centrale Photovoltaïque de Valensole ",
+        "communes": "{VALENSOLE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-10-14",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.94204646205136,
+            43.8383362492608
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 140,
+        "projet": "Photovoltaïque Catalany - Valensole",
+        "categorie": "ÉNERGIE",
+        "mo": "SAS Centrale Photovoltaïque de Valensole ",
+        "communes": "{VALENSOLE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-10-14",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.94204646205136,
+            43.8383362492608
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 142,
+        "projet": "Plateforme logistique Castorama - St Martin de Crau",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Société PRD",
+        "communes": "{\"ST MARTIN DE CRAU\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2012-11-19",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            4.8565149114673,
+            43.6118771015858
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 143,
+        "projet": "Polyréseau Energie Lavera",
+        "categorie": "ÉNERGIE",
+        "mo": "GRT Gaz",
+        "communes": "{\"PORT DE BOUC\",\"ST MITRE LES REMPARTS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2010-04-21",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.99189222011127,
+                43.4229515614854
+            ],
+            [
+                5.01492508753249,
+                43.4551357863137
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 144,
+        "projet": "Prolongement de la ligne de métro B sur les communes d'Oullins et de Saint Genis Laval",
+        "categorie": "TRANSPORTS",
+        "mo": "SYNDICAT MIXTE DES TRANSPORTS POUR LE RHONE ET L AGGLOMERATION LYONNAISE (SYTRAL)",
+        "communes": "{OULLINS,\"ST GENIS LAVAL\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-04-12",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-01478-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.7893170345874,
+                45.6945329769184
+            ],
+            [
+                4.80330690814819,
+                45.7152279137943
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 145,
+        "projet": "Prolongement de la ligne de métro B sur les communes d'Oullins et de Saint Genis Laval",
+        "categorie": "TRANSPORTS",
+        "mo": "SYNDICAT MIXTE DES TRANSPORTS POUR LE RHONE ET L AGGLOMERATION LYONNAISE (SYTRAL)",
+        "communes": "{OULLINS,\"ST GENIS LAVAL\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-04-12",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-01478-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.7893170345874,
+                45.6945329769184
+            ],
+            [
+                4.80330690814819,
+                45.7152279137943
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 146,
+        "projet": "Prolongement de la ligne de métro B sur les communes d'Oullins et de Saint Genis Laval",
+        "categorie": "TRANSPORTS",
+        "mo": "SYNDICAT MIXTE DES TRANSPORTS POUR LE RHONE ET L AGGLOMERATION LYONNAISE (SYTRAL)",
+        "communes": "{OULLINS,\"ST GENIS LAVAL\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-04-12",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-01478-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.7893170345874,
+                45.6945329769184
+            ],
+            [
+                4.80330690814819,
+                45.7152279137943
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 147,
+        "projet": "Prolongement de la ligne de métro B sur les communes d'Oullins et de Saint Genis Laval",
+        "categorie": "TRANSPORTS",
+        "mo": "SYNDICAT MIXTE DES TRANSPORTS POUR LE RHONE ET L AGGLOMERATION LYONNAISE (SYTRAL)",
+        "communes": "{OULLINS,\"ST GENIS LAVAL\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-04-12",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-01478-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.7893170345874,
+                45.6945329769184
+            ],
+            [
+                4.80330690814819,
+                45.7152279137943
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 148,
+        "projet": "Prolongement  RD 604",
+        "categorie": "TRANSPORTS",
+        "mo": "CG 06/ Direction des infrastructures de transport ",
+        "communes": "{VILLENEUVE-LOUBET}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-11-18",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.10732400810386,
+            43.6494044931049
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 149,
+        "projet": "Prolongement  RD 604",
+        "categorie": "TRANSPORTS",
+        "mo": "CG 06/ Direction des infrastructures de transport ",
+        "communes": "{ROQUEFORT-LES-PINS,VALBONNE,VILLENEUVE-LOUBET}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-11-18",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                7.02934502026066,
+                43.628138248425
+            ],
+            [
+                7.0532550670153,
+                43.6738962924077
+            ],
+            [
+                7.10732400810386,
+                43.6494044931049
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 150,
+        "projet": "Prolongement RD 6185 - Grasse",
+        "categorie": "TRANSPORTS",
+        "mo": "CG06 Direction des Infrastructures de Transport",
+        "communes": "{GRASSE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-28",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.93171279343119,
+            43.6558214641762
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 151,
+        "projet": "Prolongement RD 6185 - Grasse",
+        "categorie": "TRANSPORTS",
+        "mo": "CG06 Direction des Infrastructures de Transport",
+        "communes": "{GRASSE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-28",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.93171279343119,
+            43.6558214641762
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 152,
+        "projet": "Prolongement RD 6185 - Grasse",
+        "categorie": "TRANSPORTS",
+        "mo": "CG06 Direction des Infrastructures de Transport",
+        "communes": "{GRASSE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-28",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.93171279343119,
+            43.6558214641762
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 153,
+        "projet": "Raccordement GRT Gaz Ponteau - Martigues",
+        "categorie": "ÉNERGIE",
+        "mo": "GRTGaz région Rhône Méditerranée",
+        "communes": "{\"ST MITRE LES REMPARTS\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2008-07-21",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.01492508753249,
+            43.4551357863137
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 154,
+        "projet": "Réalisation d'une nouvelle station d'épuration sur la commune de Lumbres",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Syndicat Intercommunal des Eaux et d'Assainissement de la région de Lumbres (SIDEAL)",
+        "communes": "{LUMBRES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-08-16",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00283",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.11667505417001,
+            50.7046846771355
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 155,
+        "projet": "Réalisation d'une nouvelle station d'épuration sur la commune de Lumbres",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Syndicat Intercommunal des Eaux et d'Assainissement de la région de Lumbres (SIDEAL)",
+        "communes": "{LUMBRES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-08-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00283",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.11667505417001,
+            50.7046846771355
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 4,
+        "num": 156,
+        "projet": "Terminal_Fos_2XL",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "GPMM (ex Port Autonome de Marseille)",
+        "communes": "{ARLES,\"FOS SUR MER\",ISTRES,\"PORT ST LOUIS DU RHONE\"}",
+        "procedure": "Dérogation espèces",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.66172085040221,
+                43.5469592361894
+            ],
+            [
+                4.80557534102783,
+                43.4160089145634
+            ],
+            [
+                4.90437587151943,
+                43.45586128861
+            ],
+            [
+                4.95075601265714,
+                43.5503639240927
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 157,
+        "projet": "Réalisation d'un ensemble sportif à Montbonnot-Saint-Martin",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Comité des Alpes de Rugby - SIZOV",
+        "communes": "{\"MONTBONNOT ST MARTIN\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-04-20",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.81626416106938,
+            45.2213889568494
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 158,
+        "projet": "Réalisation d'une zone d'expansion de crues du Buqueux sur la commune de Carvin",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté d'Agglomération d'Hénin Carvin",
+        "communes": "{CARVIN}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-08-22",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00172",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.94914035796584,
+            50.4894743276739
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 159,
+        "projet": "Réalisation d'une zone d'expansion de crues du Buqueux sur la commune de Carvin",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté d'Agglomération d'Hénin Carvin",
+        "communes": "{CARVIN}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-08-22",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00172",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.94914035796584,
+            50.4894743276739
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 160,
+        "projet": "Réaménagement  de la piste de ski du mont rond et extension du réseau d’enneigement artificiel",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SEM VAL D'ARLY",
+        "communes": "{\"NOTRE DAME DE BELLECOMBE\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2017-11-10",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "73-2016-00264",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.55745049518892,
+            45.7949521444701
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 161,
+        "projet": "Régularisation d'un plan d'eau et création d'un nouveau plan d'eau sur la commune de Guemps",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Jean-Marie Walle",
+        "communes": "{GUEMPS}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-01-14",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00187",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.99724712133587,
+            50.9180819091718
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 162,
+        "projet": "Régularisation d'un plan d'eau et création d'un nouveau plan d'eau sur la commune de Guemps",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Jean-Marie Walle",
+        "communes": "{GUEMPS}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-01-14",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration des modalités d’alimentation et de circulation de l’eau au sein d’une ZH",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00187",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.99724712133587,
+            50.9180819091718
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 163,
+        "projet": "Régularisation et agrandissement d'un plan d'eau sur la commune de Sangatte",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Jean-Bernard Rivelon",
+        "communes": "{SANGATTE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-03-21",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00201",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.76959867926528,
+            50.94106021185
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 164,
+        "projet": "Régularisation et agrandissement d'un plan d'eau sur la commune de Sangatte",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Jean-Bernard Rivelon",
+        "communes": "{SANGATTE}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-03-21",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Reprofilage / Restauration de berges (yc suppression des protections artificielles)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2010-00201",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.76959867926528,
+            50.94106021185
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 165,
+        "projet": "Réhabilitation du bassin de stockage des eaux pluviales au lieudit \"Prieuré Fleuri\" en limite des communes de Fouquières les Béthune et Vaudricourt",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Maison du Département Infrastructures de l'Artois Siège de Cambrin",
+        "communes": "{\"FOUQUIERES LES BETHUNE\",VAUDRICOURT}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-04-04",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00012",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.61290331873756,
+                50.5121749442216
+            ],
+            [
+                2.61894620976623,
+                50.4994840482451
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 166,
+        "projet": "Réhabilitation du bassin de stockage des eaux pluviales au lieudit \"Prieuré Fleuri\" en limite des communes de Fouquières les Béthune et Vaudricourt",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Maison du Département Infrastructures de l'Artois Siège de Cambrin",
+        "communes": "{\"FOUQUIERES LES BETHUNE\",VAUDRICOURT}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-04-04",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00012",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.61290331873756,
+                50.5121749442216
+            ],
+            [
+                2.61894620976623,
+                50.4994840482451
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 167,
+        "projet": "Réhabilitation du bassin de stockage des eaux pluviales au lieudit \"Prieuré Fleuri\" en limite des communes de Fouquières les Béthune et Vaudricourt",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Maison du Département Infrastructures de l'Artois Siège de Cambrin",
+        "communes": "{\"FOUQUIERES LES BETHUNE\",VAUDRICOURT}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-04-04",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Restauration de ripisylves existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00012",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.61290331873756,
+                50.5121749442216
+            ],
+            [
+                2.61894620976623,
+                50.4994840482451
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 168,
+        "projet": "Rejet des eaux pluviales issues de l'aménagement d'un lotissement rue de la Nostraeten sur la commuen d'Audruicq",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Bouygues Immobilier S.A.",
+        "communes": "{AUDRUICQ}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-09-05",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Abandon de toute gestion : îlot de senescence, autre (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00130",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.08137044379869,
+            50.8843205101725
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 169,
+        "projet": "Rejet des eaux pluviales issues de l'aménagement d'un lotissement rue de la Nostraeten sur la commuen d'Audruicq",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Bouygues Immobilier S.A.",
+        "communes": "{AUDRUICQ}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-09-05",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00130",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.08137044379869,
+            50.8843205101725
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 170,
+        "projet": "Rejet des eaux pluviales issues de l'aménagement d'un lotissement rue de la Nostraeten sur la commuen d'Audruicq",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Bouygues Immobilier S.A.",
+        "communes": "{AUDRUICQ}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-09-05",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Enlèvement / traitement d’espèces exotiques envahissantes",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00130",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.08137044379869,
+            50.8843205101725
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 171,
+        "projet": "Rejet des eaux pluviales issues de l'aménagement d'un lotissement rue de la Nostraeten sur la commuen d'Audruicq",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Bouygues Immobilier S.A.",
+        "communes": "{AUDRUICQ}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2014-09-05",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2014-00130",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.08137044379869,
+            50.8843205101725
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 172,
+        "projet": "Remblai et imperméabilisation d'une zone humide sur la commune de Merlimont",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Indivision Lebrun ",
+        "communes": "{MERLIMONT}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2016-01-08",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2015-00184",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.60758397077462,
+            50.4527869411557
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 173,
+        "projet": "Remplacement du télésiège à pince fixe de Comborcière et la création de la piste du Loup sur les communes de Bourg-saint-Maurice et Villaroger",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "ADS",
+        "communes": "{\"BOURG ST MAURICE\",VILLAROGER}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-10-24",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réensemencement de milieux dégradés, replantation, restauration de haies existantes mais dégradées",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2018-00346-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                6.7667108665865,
+                45.6652706090992
+            ],
+            [
+                6.86928815713183,
+                45.5577633857072
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 174,
+        "projet": "Restauration Fort du Petit Langoustier - Hyères",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Familles FRILLET et BAUDILLON",
+        "communes": "{HYERES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-03-04",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.19013918051885,
+            43.1012334647132
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 175,
+        "projet": "Restauration Fort du Petit Langoustier - Hyères",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Familles FRILLET et BAUDILLON",
+        "communes": "{HYERES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-03-04",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.19013918051885,
+            43.1012334647132
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 176,
+        "projet": "Rétablissement de l'écoulement d'un étang sur les communes de Arques et Blencdecques",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Voies Navigables de France",
+        "communes": "{ARQUES,BLENDECQUES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-07-29",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00024",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.27500252053203,
+                50.7162206297176
+            ],
+            [
+                2.31952074771925,
+                50.7407323434107
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 177,
+        "projet": "Rétablissement de l'écoulement d'un étang sur les communes de Arques et Blencdecques",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Voies Navigables de France",
+        "communes": "{ARQUES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-07-29",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00024",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.31952074771925,
+            50.7407323434107
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 178,
+        "projet": "Rétablissement de l'écoulement d'un étang sur les communes de Arques et Blencdecques",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Voies Navigables de France",
+        "communes": "{ARQUES,BLENDECQUES}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2013-07-29",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2013-00024",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.27500252053203,
+                50.7162206297176
+            ],
+            [
+                2.31952074771925,
+                50.7407323434107
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 179,
+        "projet": "SAS Les Sablières du Tieulin - Extension et renouvellement de la carrière",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "SAS Les Sablières du Thieulin",
+        "communes": "{PONTGOUIN}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2017-11-09",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Réouverture du milieu par débroussaillage d’espèces ligneuses, abattage d’arbres, etc.",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            1.14579130097051,
+            48.4915094175967
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 180,
+        "projet": "Sécurisation de nids de balbuzards sur lignes RTE Souesmes et Pierrefite sur Sauldre",
+        "categorie": "NON PRECISE",
+        "mo": "RTE",
+        "communes": "{\"PIERREFITTE SUR SAULDRE\",SOUESMES}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2018-02-07",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2018-00042-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                2.12768020061579,
+                47.527093186456
+            ],
+            [
+                2.17056655884614,
+                47.4571519497083
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 181,
+        "projet": "Système d'assainissement de l'agglomération d'assainissement de Auxi-le-Château et imperméabilisation en zone humide",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Commune d'Auxi-le-Château",
+        "communes": "{\"AUXI LE CHATEAU\"}",
+        "procedure": "IOTA – Déclaration",
+        "date_decision": "2011-08-16",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux (sauf cours d’eau)",
+        "sscat": "Etrépage / Décapage / Décaissement du sol ou suppression de remblais,",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00241",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.11681630415946,
+            50.2310151146935
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 182,
+        "projet": "Technopôle Aéronautique Pégase - Avignon",
+        "categorie": "TRANSPORTS",
+        "mo": "Région Provence-Alpes-Côte-D’Azur",
+        "communes": "{AVIGNON,GREOUX-LES-BAINS,\"VINON SUR VERDON\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-15",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.8405825851769,
+                43.93569651267
+            ],
+            [
+                5.80760190017743,
+                43.7222000213039
+            ],
+            [
+                5.86494507393336,
+                43.7677398307077
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 183,
+        "projet": "Technopôle Aéronautique Pégase - Avignon",
+        "categorie": "TRANSPORTS",
+        "mo": "Région Provence-Alpes-Côte-D’Azur",
+        "communes": "{AVIGNON,GREOUX-LES-BAINS,\"VINON SUR VERDON\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-15",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.8405825851769,
+                43.93569651267
+            ],
+            [
+                5.80760190017743,
+                43.7222000213039
+            ],
+            [
+                5.86494507393336,
+                43.7677398307077
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 3,
+        "num": 184,
+        "projet": "Technopôle Aéronautique Pégase - Avignon",
+        "categorie": "TRANSPORTS",
+        "mo": "Région Provence-Alpes-Côte-D’Azur",
+        "communes": "{AVIGNON,GREOUX-LES-BAINS,\"VINON SUR VERDON\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-01-15",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.8405825851769,
+                43.93569651267
+            ],
+            [
+                5.80760190017743,
+                43.7222000213039
+            ],
+            [
+                5.86494507393336,
+                43.7677398307077
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 185,
+        "projet": "Travaux d'aménagement d'une zone d'expansion de crue à Saint-Venant",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de communes Artois-Lys",
+        "communes": "{\"ST VENANT\"}",
+        "procedure": "IOTA – Autorisation",
+        "date_decision": "2013-10-24",
+        "classe": "Compensation",
+        "cat": "Simple évolution des modalités de gestion antérieures",
+        "sscat": "Mise en place de pratiques de gestion alternatives plus respectueuses",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "CASCADE",
+        "numero_dossier": "62-2011-00403",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            2.52606707065454,
+            50.6224364154178
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 186,
+        "projet": "Travaux de gestion des alluvions sur la partie aval du Doux, communes de Tournon-sur-Rhône et Saint-Jean-de-Muzols",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de Communes du Tournonais",
+        "communes": "{SAINT-JEAN-DE-MUZOLS,TOURNON-SUR-RHONE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-10-29",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Aménagement ponctuel (abris ou gîtes artificiels pour la faune) complémentaire à une mesure C1.a Se distingue de la mesure R2-2 « installation d’abris ou de gîtes artificiels pour la faune » car n’est pas localisé sur le site impacté mais sur le site de compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00409-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.80052345488316,
+                45.0794977586412
+            ],
+            [
+                4.81527246387189,
+                45.0537611238786
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 187,
+        "projet": "Travaux de gestion des alluvions sur la partie aval du Doux, communes de Tournon-sur-Rhône et Saint-Jean-de-Muzols",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de Communes du Tournonais",
+        "communes": "{SAINT-JEAN-DE-MUZOLS,TOURNON-SUR-RHONE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-10-29",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00409-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.80052345488316,
+                45.0794977586412
+            ],
+            [
+                4.81527246387189,
+                45.0537611238786
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 2,
+        "num": 188,
+        "projet": "Travaux de gestion des alluvions sur la partie aval du Doux, communes de Tournon-sur-Rhône et Saint-Jean-de-Muzols",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "Communauté de Communes du Tournonais",
+        "communes": "{SAINT-JEAN-DE-MUZOLS,TOURNON-SUR-RHONE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-10-29",
+        "classe": "Compensation",
+        "cat": "Actions spécifiques aux cours d’eau (lit mineur + lit majeur), annexes hydrauliques, étendues d’eau stagnantes et zones humides",
+        "sscat": "Autre : à préciser",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00409-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [
+                4.80052345488316,
+                45.0794977586412
+            ],
+            [
+                4.81527246387189,
+                45.0537611238786
+            ]
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 189,
+        "projet": "Travaux de sécurité et d'entretien de la digue située en rive droite du canal de Jonage dite de \"Cusset\"",
+        "categorie": "ENVIRONNEMENT",
+        "mo": "ELECTRICITE DE FRANCE (E.D.F.)",
+        "communes": "{JONAGE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2011-01-07",
+        "classe": "Compensation",
+        "cat": "Abandon ou changement total des modalités de gestion antérieures",
+        "sscat": "Changement des pratiques culturales par conversion de terres cultivées ou exploitées de manière intensive",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2017-00952-011-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.0412736376445,
+            45.7911428472989
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 190,
+        "projet": "Voie des 40m - Nice",
+        "categorie": "TRANSPORTS",
+        "mo": "Métropole Nice Côte d’Azur",
+        "communes": "{NICE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2013-08-12",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.2383185214708,
+            43.7121685851797
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 191,
+        "projet": "ZAC de Nice Méridia - Nice",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "EPA Plaine du Var",
+        "communes": "{NICE}",
+        "procedure": "Dérogation espèces",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2016-03-30x-00255",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            7.2383185214708,
+            43.7121685851797
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 192,
+        "projet": "ZAC Florides - Marignane",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Comunauté urbaine MPM",
+        "communes": "{MARIGNANE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2009-08-03",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            5.21192774766005,
+            43.4174535944112
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 193,
+        "projet": "ZAC  les hauts de l'Allaine",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Ville de DELLE",
+        "communes": "{DELLE}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2016-05-02",
+        "classe": "Compensation",
+        "cat": "Action concernant tous types de milieux",
+        "sscat": "Création ou renaturation d’habitats et d’habitats favorables aux espèces cibles et à leur guilde (à préciser)",
+        "duree": "Durée non définie dans l'acte",
+        "si_metier": "ONAGRE",
+        "numero_dossier": "2015-01219-0FT-001",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.99665424487894,
+            47.5084049879966
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 194,
+        "projet": "ZAC Pardiguière - Le Luc",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Commune du Luc",
+        "communes": "{\"LE LUC\"}",
+        "procedure": "Dérogation espèces",
+        "date_decision": "2007-08-29",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.30672268622838,
+            43.3802674010859
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "nbreOfPos": 1,
+        "num": 195,
+        "projet": "ZAC Vernatelle - Gassin",
+        "categorie": "URBANISME ET CONSTRUCTION",
+        "mo": "Mairie de Gassin",
+        "communes": "{RAMATUELLE}",
+        "procedure": "Autorisation défrichement",
+        "date_decision": "2013-03-15",
+        "classe": "Compensation",
+        "duree": "Durée non définie dans l'acte",
+        "agg": "agg_0"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.6374964584438,
+            43.2186690538228
+        ]
+    },
+    "style": {
+        "marker-symbol": "diam/0000FF"
+    }
+}]
+}

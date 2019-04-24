@@ -60,7 +60,7 @@ doc: |
     - index.php propose un menu
     
   AFaire:
-    - visualiser avec QGis l'effctivité des écarts
+    - visualiser avec QGis l'effectivité des écarts
     - générer les tables simplifiées au chargement
     - permettre dans diff.php de croiser 2 livraisons qqc
      
