@@ -17,7 +17,7 @@ et de réaliser sur ces livraisons:
 Résultats [disponibles ici](http://gexplor.fr/geomce).
 
 Les exports sont disponibles:
-  - [export GéoMCE géoréf. direct du 27/2/2019](https://benoitdavidfr.github.io/geomce/mcecpii20190226direct.geojson)
-  - [export GéoMCE géoréf. à la commune du 27/2/2019](https://benoitdavidfr.github.io/geomce/mcecpii20190226commune.geojson)
+  - [export GéoMCE géoréf. direct du 27/2/2019](https://benoitdavidfr.github.io/geomce/mcecpii20190227direct.geojson)
+  - [export GéoMCE géoréf. à la commune du 27/2/2019](https://benoitdavidfr.github.io/geomce/mcecpii20190227commune.geojson)
   - [WFS Géoportail géoréf. direct à partir de l'export GéoMCE du 27/2/2019](https://benoitdavidfr.github.io/geomce/mceigngp20190227direct.geojson)
   - [WFS Géoportail géoréf. à la commune à partir de l'export GéoMCE du 27/2/2019](https://benoitdavidfr.github.io/geomce/mceigngp20190227commune.geojson)
