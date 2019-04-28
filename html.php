@@ -168,7 +168,7 @@ else {
   //echo "geometry=$geometry<br>\n";
   $center = $geometry->center();
   //echo "center="; print_r($center); echo "<br>\n";
-  $zoom = Zoom::zoomForBBoxSize($geometry->bbox()->size());
+  $zoom = Zoom::zoomForGBoxSize($geometry->bbox()->size());
   $href = "http://$_SERVER[HTTP_HOST]".dirname($_SERVER['SCRIPT_NAME'])."/map.php?"
         ."table=$table_name&amp;mid=$mid&amp;lon=$center[0]&amp;lat=$center[1]&amp;zoom=$zoom";
   echo "<a href='$href'>Carte de la mesure</a><br>\n";

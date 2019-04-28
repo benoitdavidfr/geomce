@@ -289,7 +289,7 @@ if (($_GET['action']=='load') && isset($_GET['flux'])) {
         $md5 = calculateMd5($properties);
         $insert .= "'$md5', ";
         $geom = Geometry::fromGeoJSON($feature['geometry']);
-        $geom = $geom->reproject(function ($pos) { return WebMercator::geo($pos); });
+        $geom = $geom->proj(function ($pos) { return WebMercator::geo($pos); });
         $insert .= ($geom ? "ST_GeomFromGeoJSON('$geom')" : 'null').');';
         if (!pg_query($insert)) {
           echo "$insert<br>\n";

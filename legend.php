@@ -1,3 +1,9 @@
+<?php
+/*PhpDoc:
+name: legend.php
+title: legend.php - légende de la carte GéoMCE
+*/
+?>
 <!DOCTYPE html><html><head><meta charset='UTF-8'><title>legend</title></head><body>
 <h2>Légende la carte GéoMCE</h2>
 <table border=1>

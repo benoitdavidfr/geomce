@@ -106,7 +106,7 @@ else { // construction des paramètres en mode non CLI
   $nbMaxOfFeatures = 0; // 20; // si <>0 limite à ce nbre le nbre de features
   if ($reqBbox = isset($_GET['bbox']) ? $_GET['bbox'] : (isset($_POST['bbox']) ? $_POST['bbox'] : null)) {
     $reqBbox = explode(',', $reqBbox);
-    $reqBbox = new BBox($reqBbox);
+    $reqBbox = new GBox($reqBbox);
   }
   $dissolveCollection = false; // si true remplace les collections par leurs éléments
 }

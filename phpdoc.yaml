@@ -1,4 +1,4 @@
-title: geomce - carte GéoMCE
+title: geomce - vérification du processus de publication de GéoMCE
 path: /gexplor/geomce
 doc: |
   L'objectif de ce projet est d'effectuer une vérification du processus de publication de GéoMCE CPII -> Cerema -> Géoportail
@@ -35,6 +35,7 @@ doc: |
       - avec PgSql, il n'est plus utile de gérer le WKT
         - cependant, avec la version MySQL sur Alwaysdata cela reste nécessaire
       - simplification de l'interface de CoordSys notamment pour UTM
+      - transfert de ce module dans ../../gegeom
     - nouveauté d'utiliser un style dans GéoJSON inspiré de https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
       - le style est généré en même temps que le GéoJSON et est consommé par la carte Leaflet
       - c'est une approche différente de celle du calcul du style à la volée dans Leaflet par une fonction JS
@@ -51,10 +52,10 @@ doc: |
 
   Architecture:
     - load.php lit les sources et génère une table standardisée dans la base PgSQL,
-    - geojson.php lit une table standardisée de la base PgSQL et génère un flux GéoJSON généralisé et stylé en fonction du zoom et du BBox
+    - geojson.php lit une table standardisée de la base PgSQL et génère un flux GéoJSON généralisé et stylé
+      en fonction du zoom et du GBox
     - html.php lit une table standardisée de la base PgSQL et génère une page HTML des mesures
     - geojson.inc.php implémente des fonctions communes pour les 2 scripts précédents
-    - coordsys.inc.php implémente les changements de CRS
     - map.php est la carte Leaflet d'affichage du flux GéoJSON, legend.php est sa légende
     - marker.php génère un symbole ponctuel en fonction du nom du symbole, de la couleur, ...
     - index.php propose un menu
@@ -65,6 +66,8 @@ doc: |
     - permettre dans diff.php de croiser 2 livraisons qqc
      
 journal: |
+  28/4/2019:
+    - restructuration de geojson.inc.php pour utiliser ../../gegeom et ../../coordsys
   11-15/4/2019:
     chgt d'objectifs du projet - l'objectif de mars était de visualiser les données -
     le nouvel objectif est d'effectuer une vérification de la chaine de publication
@@ -104,5 +107,3 @@ phpScripts:
   - /gexplor/geomce/marker.php
 phpIncludes:
   - /gexplor/geomce/geojson.inc.php
-  - /gexplor/geomce/coordsys.inc.php
-  - /gexplor/geomce/localtest.inc.php
